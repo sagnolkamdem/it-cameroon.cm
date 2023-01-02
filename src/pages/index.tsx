@@ -1,9 +1,10 @@
+import Link from 'next/link';
+
 import Button from '@/components/button/Button';
 import Comment from '@/components/comment/Comment';
 import LayoutWithFooter from '@/components/layout/Layout-with-footer';
 import HeroSimple from '@/sections/Hero-simple';
 import NewsletterSimple from '@/sections/Newsletter-simple';
-import Link from 'next/link';
 
 export default function Home() {
 
