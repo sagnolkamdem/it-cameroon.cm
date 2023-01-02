@@ -1,12 +1,10 @@
-import { MoonIcon, SunIcon, Bars3Icon } from "@heroicons/react/20/solid"
-import { Transition } from "@headlessui/react";
-
-import ButtonPrimary from "../../button/Button-primary";
-import ButtonSimple from "../../button/Button-simple";
 import { useEffect, useState } from "react";
-import Search from "../../input/Search";
 import clsx from "clsx";
+import { Transition } from "@headlessui/react";
+import { MoonIcon, SunIcon, Bars3Icon } from "@heroicons/react/20/solid"
+
 import Button from "@/components/button/Button";
+import Search from "../../input/Search";
 
 const HeaderOffline = () => {
 
