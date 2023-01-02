@@ -10,8 +10,8 @@ const Button = (props: ButtonProps) => {
         props.className,
         {
             "bg-primary-600 hover:bg-primary-700 text-white focus:ring-primary-500": props.intent === "primary",
-            "bg-secondary-500 hover:bg-secondary-600 text-white focus:ring-secondary-500": props.intent === "secondary",
-            "bg-danger-600 hover:bg-danger-700 text-white focus:ring-danger-500": props.intent === "secondary",
+            "bg-secondary-600 hover:bg-secondary-700 text-white focus:ring-secondary-500": props.intent === "secondary",
+            "bg-danger-600 hover:bg-danger-700 text-white focus:ring-danger-500": props.intent === "danger",
             "bg-transparent text-slate-700 dark:text-slate-200 dark:hover:bg-gray-900/40 hover:bg-slate-50 focus:ring-gray-300 dark:focus:ring-gray-700 border border-slate-300 dark:border-slate-700 dark:hover:bg-gray-800": props.intent === undefined,
         }
     )
