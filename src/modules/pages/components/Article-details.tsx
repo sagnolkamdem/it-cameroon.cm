@@ -5,7 +5,7 @@ const ArticleDetails = () => {
         <div className="relative py-16 sm:py-20">
             <div className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:items-start lg:gap-24 lg:px-8">
                 
-                <div className="sticky top-10">
+                <div className="lg:sticky lg:top-10">
                     <div className="relative sm:py-16 lg:py-0">
                         <div aria-hidden="true" className="hidden md:block lg:absolute lg:inset-y-0 lg:right-0 lg:w-screen">
                             <div className="absolute inset-y-0 right-1/2 w-full rounded-r-3xl bg-gray-50 dark:bg-gray-800 lg:right-72"></div>
@@ -23,7 +23,7 @@ const ArticleDetails = () => {
                                 <img className="absolute inset-0 h-full w-full object-cover" src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8d2ViJTIwZGV2ZWxvcG1lbnR8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60" alt="article image" />
                                 <div className="absolute inset-0 bg-gradient-to-t from-primary-50 via-primary-50 opacity-50"></div>
                                 <div className="relative px-8">
-                                    <div className="space-x-3">
+                                    <div className="flex flex-wrap gap-3">
                                         {/* <img className="h-12" src="https://tailwindui.com/img/logos/workcation.svg?color=white" alt="Workcation" /> */}
                                         <BadgeSimple>Web development</BadgeSimple>
                                         <BadgeSimple>Web development</BadgeSimple>
