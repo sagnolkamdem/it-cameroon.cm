@@ -77,6 +77,7 @@ const Blog = () => {
                                 <button className="text-sm font-semibold max-w-fit dark:text-slate-300 text-slate-600 hover:text-slate-700 dark:hover:text-slate-400 capitalize">personnal Developpement</button>
                                 <button className="text-sm font-semibold max-w-fit dark:text-slate-300 text-slate-600 hover:text-slate-700 dark:hover:text-slate-400 capitalize">Law</button>
                                 <button className="text-sm font-semibold max-w-fit dark:text-slate-300 text-slate-600 hover:text-slate-700 dark:hover:text-slate-400 capitalize">Salary</button>
+                                <button className="text-sm font-semibold max-w-fit dark:text-slate-300 text-slate-600 hover:text-slate-700 dark:hover:text-slate-400 capitalize">Artificial intelligence</button>
                                 <button className="text-sm font-semibold max-w-fit dark:text-slate-300 text-slate-600 hover:text-slate-700 dark:hover:text-slate-400 capitalize">carreers</button>
                             
                             </div>
@@ -87,9 +88,16 @@ const Blog = () => {
 
                 </aside>
 
-                <div className="col-span-3 grid grid-cols-2 lg:pl-16 gap-8">
-                    <Article />
-                </div>
+                <ul className="col-span-3 grid grid-cols-2 lg:pl-16 gap-8" role="list">
+                    <Article link="123" />
+                    <Article link="123" />
+                    <Article link="123" />
+                    <Article link="123" />
+                    <Article link="123" />
+                    <Article link="123" />
+                    <Article link="123" />
+                    <Article link="123" />
+                </ul>
 
             </div>
 
