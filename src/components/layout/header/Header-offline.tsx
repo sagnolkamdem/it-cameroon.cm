@@ -63,11 +63,11 @@ const HeaderOffline = () => {
 
                 <div className="hidden xl:flex justify-end flex-1 ml-7">
                     <nav className="flex justify-end gap-6 items-center text-slate-700 hover:text-slate-900 dark:text-white dark:hover:text-slate-100">
-                        <a href="" className="font-medium">Made in Cmr</a>
-                        <a href="" className="font-medium">Careers</a>
-                        <a href="" className="font-medium">Inspirations</a>
-                        <a href="" className="font-medium">Event</a>
-                        <a href="" className="font-medium">Blog</a>
+                        <a href="made-in-cmr" className="font-medium">Made in Cmr</a>
+                        <a href="carreers" className="font-medium">Careers</a>
+                        <a href="inspirations" className="font-medium">Inspirations</a>
+                        <a href="events" className="font-medium">Events</a>
+                        <a href="blog" className="font-medium">Blog</a>
                     </nav>
 
                     <div className="flex gap-4 items-center ml-20">
