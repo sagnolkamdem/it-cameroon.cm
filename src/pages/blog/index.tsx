@@ -38,6 +38,8 @@ const Blog = () => {
                         <p className="mt-3 text-base text-slate-700 md:mt-5 md:text-xl dark:text-slate-300">
                             Astuces et conseils pour les professionnels, étudiants et les employeurs.
                         </p>
+
+                        <Search classMeta="mt-8 lg:hidden" />
                     </div>
 
                     <div className="hidden lg:flex lg:flex-auto lg:justify-center"></div>
@@ -60,7 +62,7 @@ const Blog = () => {
             
             <div className="lg:grid lg:grid-cols-4 max-w-7xl mx-auto py-12 sm:px-6 lg:px-8">
 
-                <aside className="col-span-1">
+                <aside className="col-span-1 hidden lg:block">
                     
                     <div className="sticky top-10">
                         <Search classMeta="mb-8" />
@@ -87,7 +89,7 @@ const Blog = () => {
 
                 </aside>
 
-                <ul className="col-span-3 grid grid-cols-2 lg:pl-16 gap-8" role="list">
+                <ul className="col-span-3 grid grid-cols-1 max-sm:px-6 sm:grid-cols-2 lg:pl-16 gap-8" role="list">
                     <Article link="123" />
                     <Article link="123" />
                     <Article link="123" />
