@@ -1,6 +1,5 @@
 import BadgeSimple from "@/components/badge/Badge-simple";
 import BannerSimple from "@/components/banner/Banner-simple";
-import ButtonWithoutStyle from "@/components/button/Button-without-style";
 import Search from "@/components/input/Search";
 import LayoutWithFooter from "@/components/layout/Layout-with-footer";
 import Article from "@/modules/pages/components/Article";

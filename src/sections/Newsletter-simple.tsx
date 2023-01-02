@@ -1,4 +1,4 @@
-import ButtonPrimary from "../button/Button-primary";
+import Button from "@/components/button/Button";
 
 const NewsletterSimple = () => {
     return ( 
@@ -34,9 +34,9 @@ const NewsletterSimple = () => {
                         <input id="cta-email" type="email" className="block w-full rounded-md border border-transparent px-5 py-1.5 text-base text-gray-900 dark:text-white dark:bg-gray-800 placeholder-gray-500 shadow-sm focus:border-transparent focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary-600" placeholder="Enter your email" />
                         </div>
                         <div className="mt-4 sm:mt-0 sm:ml-3">
-                           <ButtonPrimary>
+                           <Button intent="primary">
                               Notify me
-                           </ButtonPrimary>
+                           </Button>
                         </div>
                     </form>
                     </div>

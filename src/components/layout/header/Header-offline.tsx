@@ -1,11 +1,10 @@
-import { MoonIcon, SunIcon, Bars3Icon } from "@heroicons/react/20/solid"
-import { Transition } from "@headlessui/react";
-
-import ButtonPrimary from "../../button/Button-primary";
-import ButtonSimple from "../../button/Button-simple";
 import { useEffect, useState } from "react";
-import Search from "../../input/Search";
 import clsx from "clsx";
+import { Transition } from "@headlessui/react";
+import { MoonIcon, SunIcon, Bars3Icon } from "@heroicons/react/20/solid"
+
+import Button from "@/components/button/Button";
+import Search from "../../input/Search";
 
 const HeaderOffline = () => {
 
@@ -72,13 +71,9 @@ const HeaderOffline = () => {
 
                     <div className="flex gap-4 items-center ml-20">
 
-                        <ButtonSimple type="button">
-                            Se connecter
-                        </ButtonSimple>
+                        <Button href="login">Se connecter</Button>
 
-                        <ButtonPrimary>
-                            Partager votre solution
-                        </ButtonPrimary>
+                        <Button href="share-made-in-cameroon" intent="primary">Partager votre solution</Button>
 
                         <button className="relarive w-8 h-8 rounded-full shadow-md flex justify-center items-center dark:bg-gray-700" onClick={handleClick}>
                             {

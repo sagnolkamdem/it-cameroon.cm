@@ -1,8 +1,8 @@
-import ButtonSimple from '@/components/button/Button-simple';
-import Comment from '@/components/comment/Comment'
-import HeroSimple from '@/components/hero/Hero-simple'
-import LayoutWithFooter from '@/components/layout/Layout-with-footer'
-import NewsletterSimple from '@/components/newsletter/Newsletter-simple';
+import Button from '@/components/button/Button';
+import Comment from '@/components/comment/Comment';
+import LayoutWithFooter from '@/components/layout/Layout-with-footer';
+import HeroSimple from '@/sections/Hero-simple';
+import NewsletterSimple from '@/sections/Newsletter-simple';
 import Link from 'next/link';
 
 export default function Home() {
@@ -100,10 +100,10 @@ export default function Home() {
             </div>
 
             <div className="mt-10 h-10 flex justify-center">
-              <ButtonSimple href='#'>
+              <Button href='#'>
                 See more
                 <span className="ml-2" aria-hidden="true">&rarr;</span>
-              </ButtonSimple>
+              </Button>
             </div>
 
           </div>
