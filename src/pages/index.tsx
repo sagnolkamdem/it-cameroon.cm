@@ -75,7 +75,7 @@ export default function Home() {
 
       <HeroSimple />
       
-      <div className="mt-14">
+      {/* <div className="mt-14">
         
         <h2 className='font-display text-4xl font-bold tracking-tight text-slate-900 dark:text-white text-center mb-10'>Solutions made in cmr</h2>
         <p className='text-center text-xl font-semibold text-slate-500 dark:text-slate-300 mb-10'>companies promote their solution through our channel and trust us to reach as many people as possible</p>
@@ -131,7 +131,7 @@ export default function Home() {
 
       </div>
       
-      <NewsletterSimple />
+      <NewsletterSimple /> */}
     
     </LayoutWithFooter>
   );
