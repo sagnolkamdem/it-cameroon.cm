@@ -1,7 +1,6 @@
 import Link from "next/link";
-import ButtonPrimary from "../button/Button-primary";
-import ButtonSimple from "../button/Button-simple";
-import ButtonWarning from "../button/Button-warning";
+
+import Button from "@/components/button/Button";
 
 const HeroSimple = () => {
     return ( 
@@ -42,16 +41,16 @@ const HeroSimple = () => {
                             </p>
                             <div className="mt-8 flex gap-x-4 sm:justify-center">
 
-                                <ButtonPrimary>
+                                <Button intent="primary">
                                     Tell us about your solution
                                     <span className="text-primary-200 ml-2 flex items-center" aria-hidden="true">&rarr;</span>
-                                </ButtonPrimary>
+                                </Button>
 
 
-                                <ButtonWarning>
+                                <Button intent="secondary">
                                     Made in Cameroon
-                                    <span className="text-yellow-200 ml-2 flex items-center" aria-hidden="true">&rarr;</span>
-                                </ButtonWarning>
+                                    <span className="text-secondary-200 ml-2 flex items-center" aria-hidden="true">&rarr;</span>
+                                </Button>
 
                             </div>
                         </div>

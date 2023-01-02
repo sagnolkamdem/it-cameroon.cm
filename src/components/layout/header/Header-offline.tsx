@@ -6,6 +6,7 @@ import ButtonSimple from "../../button/Button-simple";
 import { useEffect, useState } from "react";
 import Search from "../../input/Search";
 import clsx from "clsx";
+import Button from "@/components/button/Button";
 
 const HeaderOffline = () => {
 
@@ -72,13 +73,9 @@ const HeaderOffline = () => {
 
                     <div className="flex gap-4 items-center ml-20">
 
-                        <ButtonSimple type="button">
-                            Se connecter
-                        </ButtonSimple>
+                        <Button href="login">Se connecter</Button>
 
-                        <ButtonPrimary>
-                            Partager votre solution
-                        </ButtonPrimary>
+                        <Button href="share-made-in-cameroon" intent="primary">Partager votre solution</Button>
 
                         <button className="relarive w-8 h-8 rounded-full shadow-md flex justify-center items-center dark:bg-gray-700" onClick={handleClick}>
                             {
