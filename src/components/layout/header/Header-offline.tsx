@@ -5,36 +5,43 @@ import ButtonPrimary from "../../button/Button-primary";
 import ButtonSimple from "../../button/Button-simple";
 import { useEffect, useState } from "react";
 import Search from "../../input/Search";
+import clsx from "clsx";
 
 const HeaderOffline = () => {
 
-    const [darkTheme, setDarkTheme] = useState(false);
-
+    const [theme, setTheme] = useState('dark');
     const [isShowing, setIsShowing] = useState(false);
 
-    const handleClick = () => {
-        isShowing ? setIsShowing(false) : setIsShowing(true);
-    }
+
 
     useEffect(() => {
-        if (darkTheme) {
-          document.documentElement.classList.add('dark')
-        } else {
-          document.documentElement.classList.remove('dark')
-        }
-    }, [darkTheme]);
-
-    useEffect(() => {
-        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches || localStorage.getItem('theme') === 'dark') {
             document.documentElement.classList.add('dark');
         } else {
             document.documentElement.classList.remove('dark');
         }
     }, []);
 
+    useEffect(() => {
+        if (theme === 'dark') {
+          document.documentElement.classList.add('dark')
+        } else {
+          document.documentElement.classList.remove('dark')
+        }
 
-    const handleSwitchTheme = (value: boolean) => {
-        setDarkTheme(value);
+        localStorage.setItem('theme', theme);
+
+    }, [theme]);
+
+
+
+    const handleClick = () => {
+        isShowing ? setIsShowing(false) : setIsShowing(true);
+    }
+
+    const handleSwitchTheme = (value: string) => {
+        setTheme(value);
+        localStorage.setItem('theme', value);
         handleClick();
     }
 
@@ -73,8 +80,13 @@ const HeaderOffline = () => {
                             Partager votre solution
                         </ButtonPrimary>
 
-                        <button className="relarive w-8 h-8 rounded-full shadow-md flex justify-center items-center dark:bg-slate-700" onClick={handleClick}>
-                            <SunIcon className="w-6 h-6 text-green-600" />
+                        <button className="relarive w-8 h-8 rounded-full shadow-md flex justify-center items-center dark:bg-gray-700" onClick={handleClick}>
+                            {
+                                theme === 'light' ?
+                                    <SunIcon className="w-6 h-6 text-green-600" />
+                                    :
+                                    <MoonIcon className="w-6 h-6 text-green-600" />
+                            }
                         </button>
 
                         <Transition
@@ -88,23 +100,33 @@ const HeaderOffline = () => {
                             className="fixed z-50"
                         >
 
-                            <ul aria-labelledby="tailwind-list-label" aria-orientation="vertical" id="tailwind-listbox-options" role="listbox" className="fixed z-50 p-3 mt-3 space-y-1 text-sm font-medium bg-white shadow-md top-16 right-5 w-36 rounded-xl shadow-black/5 ring-1 ring-black/5 dark:bg-slate-800 dark:ring-white/5 ng-star-inserted">
-                                <li className="flex cursor-pointer select-none items-center rounded-[0.625rem] p-1 hover:bg-slate-100 dark:hover:bg-slate-900/40 ng-star-inserted">
+                            <ul aria-labelledby="tailwind-list-label" aria-orientation="vertical" id="tailwind-listbox-options" role="listbox" className="fixed z-50 p-3 mt-3 space-y-1 text-sm font-medium bg-white shadow-md top-16 right-5 w-36 rounded-xl shadow-black/5 ring-1 ring-black/5 dark:bg-gray-800 dark:ring-white/5 ng-star-inserted">
+                                <li className={clsx(
+                                    "flex cursor-pointer select-none items-center rounded-[0.625rem] p-1 hover:bg-gray-100 dark:hover:bg-gray-900/40 ng-star-inserted",
+                                    {
+                                        "bg-gray-50": theme === "light"
+                                    }
+                                )}>
                                     <button onClick={() => {
-                                        handleSwitchTheme(false)
-                                    }} className="p-1 bg-white rounded-md shadow ring-1 ring-slate-900/5 dark:bg-slate-700 dark:ring-inset dark:ring-white/5">
+                                        handleSwitchTheme('light');
+                                    }} className="p-1 bg-white rounded-md shadow ring-1 ring-slate-900/5 dark:bg-gray-700 dark:ring-inset dark:ring-white/5">
                                         <SunIcon className="w-6 h-6 text-green-600" />
                                     </button>
-                                    <div className="ml-3 text-green-500">Clair</div>
+                                    <div className="ml-3 text-green-500">Light</div>
                                 </li>
                                 
-                                <li className="flex cursor-pointer select-none items-center rounded-[0.625rem] p-1 hover:bg-slate-100 dark:hover:bg-slate-900/40 ng-star-inserted">
+                                <li className={clsx(
+                                    "flex cursor-pointer select-none items-center rounded-[0.625rem] p-1 hover:bg-gray-100 dark:hover:bg-gray-900 ng-star-inserted",
+                                    {
+                                        "bg-gray-50 dark:bg-gray-900/40": theme === "dark"
+                                    }
+                                )}>
                                     <button onClick={() => {
-                                        handleSwitchTheme(true)
-                                    }}  className="p-1 bg-white rounded-md shadow ring-1 ring-slate-900/5 dark:bg-slate-700 dark:ring-inset dark:ring-white/5">
+                                        handleSwitchTheme('dark');
+                                    }}  className="p-1 bg-white rounded-md shadow ring-1 ring-slate-900/5 dark:bg-gray-700 dark:ring-inset dark:ring-white/5">
                                         <MoonIcon className="w-6 h-6 text-green-600" />
                                     </button>
-                                    <div className="ml-3 text-slate-700 dark:text-slate-400">Sombre</div>
+                                    <div className="ml-3 text-slate-700 dark:text-slate-400">Dark</div>
                                 </li>
                             </ul>
                         </Transition>

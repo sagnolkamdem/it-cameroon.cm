@@ -4,7 +4,7 @@ import { CommentProps } from './comment.interface';
 const Comment = ({name, message, work}: {name: string, message: string, work: string}) => {
 
     return ( 
-        <figure className="rounded-3xl p-8 shadow-md ring-1 ring-slate-900/5 border border-gray-300 dark:border-none dark:bg-gray-800 overflow-hidden">
+        <figure className="rounded-3xl p-8 shadow-md ring-1 ring-slate-900/5 border border-gray-300 dark:border-none dark:bg-gray-800 overflow-hidden mb-2">
             <blockquote>
                 <p className="text-lg tracking-tight text-slate-900 dark:text-white before:content-['“'] after:content-['”']">
                     {message}
