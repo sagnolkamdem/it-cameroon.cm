@@ -78,7 +78,7 @@ export default function Home() {
       <div className="mt-14">
         
         <h2 className='font-display text-4xl font-bold tracking-tight text-slate-900 dark:text-white text-center mb-10'>Solutions made in cmr</h2>
-        <p className='text-center text-xl font-semibold text-slate-500 dark:text-slate-300 mb-10'>companies promote their solution through our channel and trust us to reach as many people as possible</p>
+        <p className='text-center text-xl font-semibold text-slate-500 dark:text-slate-300 mb-10 px-6'>companies promote their solution through our channel and trust us to reach as many people as possible</p>
       
         <div className="bg-gray-100 dark:bg-gray-800 z-50">
           <div className="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:px-8">
@@ -114,7 +114,7 @@ export default function Home() {
 
           <h2 className='font-display text-4xl font-bold tracking-tight text-slate-900 dark:text-white text-center mb-10'>Only positive feedback</h2>
 
-          <p className='text-center text-xl font-semibold text-slate-500 dark:text-slate-300 mb-10'>Our partners are full of praise for us in relation to the service provided</p>
+          <p className='text-center text-xl font-semibold text-slate-500 dark:text-slate-300 mb-10 px-6'>Our partners are full of praise for us in relation to the service provided</p>
 
           <div className="pt-6 pb-16 sm:pt-10 sm:pb-24 overflow-hidden">
 
