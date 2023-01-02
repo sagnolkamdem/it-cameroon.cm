@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import clsx from "clsx";
 import { Transition } from "@headlessui/react";
-import { MoonIcon, SunIcon, Bars3Icon } from "@heroicons/react/20/solid"
+import { MoonIcon, SunIcon, Bars3Icon, ClockIcon, ArrowLongRightIcon } from "@heroicons/react/20/solid"
 
 import Button from "@/components/button/Button";
 import Search from "../../input/Search";
@@ -10,6 +10,7 @@ const HeaderOffline = () => {
 
     const [theme, setTheme] = useState('dark');
     const [isShowing, setIsShowing] = useState(false);
+    const [showMobileMenu, setShowMobileMenu] = useState(false);
 
 
 
@@ -44,6 +45,11 @@ const HeaderOffline = () => {
         handleClick();
     }
 
+    const handleSwitchShowMobileMenu = () => {
+        setShowMobileMenu(!showMobileMenu);
+        console.log(showMobileMenu);
+    }
+
 
     return ( 
         <header className="mx-5 sm:px-8 py-4 z-50">
@@ -56,9 +62,64 @@ const HeaderOffline = () => {
 
                     <Search classMeta="ml-7 xl:w-60 w-full"/>
 
-                    <Bars3Icon className="hidden ml-6 w-10 h-10 text-slate-700 max-xl:block" />
+
+                    <div className="flex xl:hidden">
+                        <button onClick={handleSwitchShowMobileMenu} type="button" className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+                            <span className="sr-only">Open main menu</span>
+                            <Bars3Icon className="hidden ml-6 w-8 h-8 text-slate-700 max-xl:block" />
+                        </button>
+                    </div>
 
                 </div>
+
+                {/* Mobile menu */}
+                {
+                    showMobileMenu && (
+                        <div role="dialog" aria-modal="true">
+                            <div className="fixed transition duration-1000 inset-0 z-10 overflow-y-auto bg-white dark:bg-gray-900 px-6 py-5 xl:hidden">
+                                <div className="flex h-9 items-center justify-between">
+                                    <div className="flex">
+                                        <a href="#" className="-m-1.5 p-1.5">
+                                            <span className="sr-only">Your Company</span>
+                                            logo
+                                        </a>
+                                    </div>
+                                    <div className="flex">
+                                        <button onClick={handleSwitchShowMobileMenu} type="button" className="inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+                                            <span className="sr-only">Close menu</span>
+                                            <ArrowLongRightIcon className="w-8 h-8 text-slate-700" />
+                                        </button>
+                                    </div>
+                                </div>
+                                <div className="mt-6 flow-root">
+                                    <div className="-my-6 divide-y divide-gray-500/10">
+                                        <div className="space-y-2 py-6">
+                                            <a href="#" className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-slate-700 hover:text-slate-900 dark:text-white dark:hover:text-slate-100">Made in CMR</a>
+
+                                            <a href="#" className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-slate-700 hover:text-slate-900 dark:text-white dark:hover:text-slate-100">Carreers</a>
+
+                                            <a href="#" className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-slate-700 hover:text-slate-900 dark:text-white dark:hover:text-slate-100">Inspirations</a>
+
+                                            <a href="#" className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-slate-700 hover:text-slate-900 dark:text-white dark:hover:text-slate-100">Events</a>
+
+                                            <a href="#" className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-slate-700 hover:text-slate-900 dark:text-white dark:hover:text-slate-100">Blog</a>
+                                        </div>
+                                        <div className="py-6">
+                                            <div className="flex flex-col gap-6 items-start justify-start">
+
+                                                <Button href="login">Se connecter</Button>
+
+                                                <Button href="share-made-in-cameroon" intent="primary">Partager votre solution</Button>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    )
+                }
+                
 
                 <div className="hidden xl:flex justify-end flex-1 ml-7">
                     <nav className="flex justify-end gap-6 items-center text-slate-700 hover:text-slate-900 dark:text-white dark:hover:text-slate-100">
