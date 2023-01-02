@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import clsx from "clsx";
 import { Transition } from "@headlessui/react";
 import { MoonIcon, SunIcon, Bars3Icon, ClockIcon, ArrowLongRightIcon } from "@heroicons/react/20/solid"
@@ -94,15 +95,15 @@ const HeaderOffline = () => {
                                 <div className="mt-6 flow-root">
                                     <div className="-my-6 divide-y divide-gray-500/10">
                                         <div className="space-y-2 py-6">
-                                            <a href="#" className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-slate-700 hover:text-slate-900 dark:text-white dark:hover:text-slate-100">Made in CMR</a>
+                                            <Link href="#" className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-slate-700 hover:text-slate-900 dark:text-white dark:hover:text-slate-100">Made in CMR</Link>
 
-                                            <a href="#" className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-slate-700 hover:text-slate-900 dark:text-white dark:hover:text-slate-100">Carreers</a>
+                                            <Link href="#" className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-slate-700 hover:text-slate-900 dark:text-white dark:hover:text-slate-100">Carreers</Link>
 
-                                            <a href="#" className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-slate-700 hover:text-slate-900 dark:text-white dark:hover:text-slate-100">Inspirations</a>
+                                            <Link href="#" className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-slate-700 hover:text-slate-900 dark:text-white dark:hover:text-slate-100">Inspirations</Link>
 
-                                            <a href="#" className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-slate-700 hover:text-slate-900 dark:text-white dark:hover:text-slate-100">Events</a>
+                                            <Link href="#" className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-slate-700 hover:text-slate-900 dark:text-white dark:hover:text-slate-100">Events</Link>
 
-                                            <a href="#" className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-slate-700 hover:text-slate-900 dark:text-white dark:hover:text-slate-100">Blog</a>
+                                            <Link href="blog" className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-slate-700 hover:text-slate-900 dark:text-white dark:hover:text-slate-100">Blog</Link>
                                         </div>
                                         <div className="py-6">
                                             <div className="flex flex-col gap-6 items-start justify-start">
