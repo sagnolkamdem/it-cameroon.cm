@@ -20,8 +20,6 @@ const Details = () => {
 
                 <ArticleDetails />
 
-
-
             </div>
         </LayoutWithFooter>
      );
