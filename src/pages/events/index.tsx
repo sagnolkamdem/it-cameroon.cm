@@ -1,18 +1,17 @@
-import BadgeSimple from "@/components/badge/Badge-simple";
 import BannerSimple from "@/components/banner/Banner-simple";
 import Breadscrumps from "@/components/breadscrumps/Breadscrumps";
 import { BreadscrumpsProps } from "@/components/breadscrumps/breadscrumps.interface";
 import Search from "@/components/input/Search";
 import LayoutWithFooter from "@/components/layout/Layout-with-footer";
-import Article from "@/modules/pages/components/Article";
+import Event from "@/modules/pages/components/Event";
 
-const Blog = () => {
+const Events = () => {
 
     const breads: BreadscrumpsProps = {
         breads: [
             {
-                name: "blog",
-                link: "blog",
+                name: "events",
+                link: "events",
             }
         ]
     }
@@ -37,10 +36,10 @@ const Blog = () => {
                             <Breadscrumps props={breads}/>
                         </div>
                         <h1 className="mt-6 text-[1.75rem] font-heading font-extrabold leading-9 tracking-tight text-slate-900 md:text-4xl dark:text-white">
-                            Articles
+                            Events
                         </h1>
                         <p className="mt-3 text-base text-slate-700 md:mt-5 md:text-xl dark:text-slate-300">
-                            Astuces et conseils pour les professionnels, étudiants et les employeurs.
+                            Summary of major tech events in Cameroon.
                         </p>
 
                         <Search classMeta="mt-8 lg:hidden" />
@@ -63,52 +62,25 @@ const Blog = () => {
                 </div>
             </BannerSimple>
 
-            
-            <div className="lg:grid lg:grid-cols-4 max-w-7xl mx-auto py-12 sm:px-6 lg:px-8">
+            <ul role="list" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-between gap-8 max-w-7xl mx-auto py-12 sm:px-6 lg:px-8">
 
-                <aside className="col-span-1 hidden lg:block">
-                    
-                    <div className="sticky top-10">
-                        <Search classMeta="mb-8" />
+                <Event status="coming" />
+                <Event status="coming" />
+                <Event status="coming" />
+                <Event status="coming" />
+                <Event status="past" />
+                <Event status="past" />
+                <Event status="past" />
+                <Event status="past" />
+                <Event status="past" />
+                <Event status="past" />
+                <Event status="past" />
+                <Event status="past" />
 
-                        <div className="space-y-4">
-
-                            <h3 className="text-lg font-bold text-primary-600">Categories</h3>
-
-                            <div className="flex flex-col gap-3">
-
-                                <button className="text-sm font-semibold max-w-fit dark:text-slate-300 text-slate-600 hover:text-slate-700 dark:hover:text-slate-400 capitalize">web Developement</button>
-                                <button className="text-sm font-semibold max-w-fit dark:text-slate-300 text-slate-600 hover:text-slate-700 dark:hover:text-slate-400 capitalize">Design</button>
-                                <button className="text-sm font-semibold max-w-fit dark:text-slate-300 text-slate-600 hover:text-slate-700 dark:hover:text-slate-400 capitalize">personnal Developpement</button>
-                                <button className="text-sm font-semibold max-w-fit dark:text-slate-300 text-slate-600 hover:text-slate-700 dark:hover:text-slate-400 capitalize">Law</button>
-                                <button className="text-sm font-semibold max-w-fit dark:text-slate-300 text-slate-600 hover:text-slate-700 dark:hover:text-slate-400 capitalize">Salary</button>
-                                <button className="text-sm font-semibold max-w-fit dark:text-slate-300 text-slate-600 hover:text-slate-700 dark:hover:text-slate-400 capitalize">Artificial intelligence</button>
-                                <button className="text-sm font-semibold max-w-fit dark:text-slate-300 text-slate-600 hover:text-slate-700 dark:hover:text-slate-400 capitalize">carreers</button>
-                            
-                            </div>
-
-
-                        </div>
-                    </div>
-
-                </aside>
-
-                <ul className="col-span-3 grid grid-cols-1 max-sm:px-6 sm:grid-cols-2 lg:pl-16 gap-8" role="list">
-                    <Article link="123" />
-                    <Article link="123" />
-                    <Article link="123" />
-                    <Article link="123" />
-                    <Article link="123" />
-                    <Article link="123" />
-                    <Article link="123" />
-                    <Article link="123" />
-                </ul>
-
-            </div>
-
+            </ul>
 
         </LayoutWithFooter>
      );
 }
  
-export default Blog;
+export default Events;
