@@ -101,7 +101,7 @@ const HeaderOffline = () => {
 
                                             <Link href="#" className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-slate-700 hover:text-slate-900 dark:text-white dark:hover:text-slate-100">Inspirations</Link>
 
-                                            <Link href="#" className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-slate-700 hover:text-slate-900 dark:text-white dark:hover:text-slate-100">Events</Link>
+                                            <Link href="/events" className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-slate-700 hover:text-slate-900 dark:text-white dark:hover:text-slate-100">Events</Link>
 
                                             <Link href="/blog" className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-slate-700 hover:text-slate-900 dark:text-white dark:hover:text-slate-100">Blog</Link>
                                         </div>
