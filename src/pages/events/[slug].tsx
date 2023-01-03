@@ -29,7 +29,6 @@ const EventDetails = () => {
                                     <div className="absolute inset-0 bg-gradient-to-t from-primary-50 via-primary-50 opacity-50"></div>
                                     <div className="relative px-8">
                                         <div className="flex flex-wrap gap-3">
-                                            {/* <img className="h-12" src="https://tailwindui.com/img/logos/workcation.svg?color=white" alt="Workcation" /> */}
                                             <BadgeSimple>Web development</BadgeSimple>
                                             <BadgeSimple>Web development</BadgeSimple>
                                             <BadgeSimple>Web development</BadgeSimple>
