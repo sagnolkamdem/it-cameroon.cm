@@ -1,10 +1,18 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 import Button from '@/components/button/Button';
 import Comment from '@/components/comment/Comment';
 import LayoutWithFooter from '@/components/layout/Layout-with-footer';
 import HeroSimple from '@/sections/Hero-simple';
 import NewsletterSimple from '@/sections/Newsletter-simple';
+
+import cosna from "../public/companies/cosna_Afrique_Logo.png";
+import dikalo from "../public/companies/dikalo_logo_orange.png";
+import job from "../public/companies/laravel-job-logo.png";
+import lnui from "../public/companies/lnui-logo.svg";
+import loov from "../public/companies/loov-logo.png";
+import tranzak from "../public/companies/tranzak_logo.png";
 
 export default function Home() {
 
@@ -83,20 +91,20 @@ export default function Home() {
         <div className="bg-gray-100 dark:bg-gray-800 z-50">
           <div className="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
-              <Link href="#" className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-                <img className="h-12" src="https://tailwindui.com/img/logos/tuple-logo-gray-400.svg" alt="Tuple" />
+              <Link href="/made-in-cmr/cosna-afrique" className="group col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+                <Image className="group-hover:grayscale-0 h-12 object-contain grayscale" src={cosna} alt="cosna afrique" />
               </Link>
-              <Link href="#" className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-                <img className="h-12" src="https://tailwindui.com/img/logos/mirage-logo-gray-400.svg" alt="Mirage" />
+              <Link href="/made-in-cmr/dikalo" className="group col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+                <Image className="group-hover:grayscale-0 h-12 object-contain grayscale" src={dikalo} alt="dikalo" />
               </Link>
-              <Link href="#" className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-                <img className="h-12" src="https://tailwindui.com/img/logos/statickit-logo-gray-400.svg" alt="StaticKit" />
+              <Link href="/made-in-cmr/laravel-cameroon-job" className="group col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+                <Image className="group-hover:grayscale-0 h-12 object-contain grayscale" src={job} alt="laravel cameroon job" />
               </Link>
-              <Link href="#" className="col-span-1 flex justify-center md:col-span-3 lg:col-span-1">
-                <img className="h-12" src="https://tailwindui.com/img/logos/transistor-logo-gray-400.svg" alt="Transistor" />
+              <Link href="/made-in-cmr/ln-ui" className="group col-span-1 flex justify-center md:col-span-3 lg:col-span-1">
+                <Image className="group-hover:grayscale-0 h-12 object-contain grayscale" src={tranzak} alt="tranzak" />
               </Link>
-              <Link href="#" className="col-span-2 flex justify-center md:col-span-3 lg:col-span-1">
-                <img className="h-12" src="https://tailwindui.com/img/logos/workcation-logo-gray-400.svg" alt="Workcation" />
+              <Link href="/made-in-cmr/loov-solution" className="group col-span-2 flex justify-center md:col-span-3 lg:col-span-1">
+                <Image className="group-hover:grayscale-0 h-12 object-contain grayscale" src={loov} alt="loov solution" />
               </Link>
             </div>
 
