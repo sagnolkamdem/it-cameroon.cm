@@ -99,7 +99,7 @@ const Footer = () => {
                             <label htmlFor="language" className="sr-only">Language</label>
                             <div className="relative">
                                 <select id="language" name="language" className="block w-full appearance-none rounded-md border border-transparent dark:bg-gray-700 bg-none py-2 pl-3 pr-10 text-base dark:text-white text-slate-900 placeholder:text-slate-400 focus:border-primary-600 focus:outline-none focus:ring-primary-600 sm:text-sm">
-                                    <option value>English</option>
+                                    <option selected>English</option>
                                     <option>French</option>
                                 </select>
                                 <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2">
