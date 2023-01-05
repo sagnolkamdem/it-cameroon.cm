@@ -1,6 +1,6 @@
 import Button from "@/components/button/Button";
 
-const NewsletterSimple = () => {
+const Newsletter = () => {
     return ( 
         <div className="bg-white dark:bg-transparent">
             <div className="relative sm:py-16">
@@ -47,4 +47,4 @@ const NewsletterSimple = () => {
      );
 }
  
-export default NewsletterSimple;
+export default Newsletter;

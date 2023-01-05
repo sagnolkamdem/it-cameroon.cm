@@ -2,7 +2,7 @@ import Link from "next/link";
 
 import Button from "@/components/button/Button";
 
-const HeroSimple = () => {
+const Hero = () => {
     return ( 
         <div className="isolate bg-white dark:bg-transparent overflow-hidden">
 
@@ -89,4 +89,4 @@ const HeroSimple = () => {
      );
 }
  
-export default HeroSimple;
+export default Hero;
