@@ -1,6 +1,7 @@
 import Link from "next/link";
+import Image from "next/image";
 
-import BadgeSimple from "@/components/badge/Badge-simple";
+import Badge from "@/components/badge/Badge";
 
 const ArticleDetails = () => {
     return ( 
@@ -11,15 +12,15 @@ const ArticleDetails = () => {
                 <div className="md:absolute md:z-20 md:left-0 md:max-w-2xl max-w-full md:inset-y-0 md:mb-0 mb-8">
                     <div className="lg:pt-28 pt-10">
                         <div className="flex gap-4 flex-wrap mb-8 pb-6 justify-center">
-                            <BadgeSimple>
+                            <Badge>
                                 Web development
-                            </BadgeSimple>
-                            <BadgeSimple>
+                            </Badge>
+                            <Badge>
                                 Artificial intelligence
-                            </BadgeSimple>
-                            <BadgeSimple>
+                            </Badge>
+                            <Badge>
                                 Personnal development
-                            </BadgeSimple>
+                            </Badge>
                         </div>
                         <blockquote className="mt-8 max-w-fit mx-auto">
                             <div className="relative text-lg font-medium text-white md:flex-grow flex justify-center">
@@ -35,7 +36,7 @@ const ArticleDetails = () => {
                             <footer className="mt-8 flex gap-4 items-center justify-center">
                                 <div>
                                     <span className="sr-only">Sagnol Kamdem</span>
-                                    <img className="w-10 h-10 rounded-full" src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHBlcnNvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60" alt="author photo" />
+                                    <Image className="w-10 h-10 rounded-full" src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHBlcnNvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60" alt="author photo" />
                                 </div>
                                 <div className="flex flex-col justify-between">
                                     <p className="font-semibold text-slate-500 dark:text-slate-300">Sagnol Kamdem</p>
@@ -46,7 +47,7 @@ const ArticleDetails = () => {
                     </div>
                 </div>
 
-                <img className="md:absolute md:z-10 md:right-0 md:inset-y-0 md:max-h-full max-h-60 max-w-full md:max-w-[50%] rounded-md mx-auto" src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8d2ViJTIwZGV2ZWxvcG1lbnR8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60" alt="article detail image"/>
+                <Image className="md:absolute md:z-10 md:right-0 md:inset-y-0 md:max-h-full max-h-60 max-w-full md:max-w-[50%] rounded-md mx-auto" src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8d2ViJTIwZGV2ZWxvcG1lbnR8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60" alt="article detail image"/>
                 
                 <div className="absolute z-30 bottom-20 lg:bottom-10 w-full hidden md:block">
                     <svg className="mx-auto" width="281" height="261" viewBox="0 0 281 261" fill="none" xmlns="http://www.w3.org/2000/svg">

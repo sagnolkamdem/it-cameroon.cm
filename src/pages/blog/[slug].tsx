@@ -1,9 +1,9 @@
-import LayoutWithFooter from "@/components/layout/Layout-with-footer";
+import Layout from "@/components/layout/Layout";
 import ArticleDetails from "@/modules/pages/components/Article-details";
 
 const Details = () => {
     return ( 
-        <LayoutWithFooter>
+        <Layout>
             
             <div className="isolate">
                 <div className="absolute inset-x-0 top-[5rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top[-20rem]">
@@ -21,7 +21,7 @@ const Details = () => {
                 <ArticleDetails />
 
             </div>
-        </LayoutWithFooter>
+        </Layout>
      );
 }
  
