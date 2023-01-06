@@ -31,7 +31,7 @@ const Event = (props: EventProps) => {
                 </Badge>
             </div>
 
-            <Image className="w-full h-60 object-cover mb-8" src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8d2ViJTIwZGV2ZWxvcG1lbnR8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60" alt="event logo" />
+            <img className="w-full h-60 object-cover mb-8" src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8d2ViJTIwZGV2ZWxvcG1lbnR8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60" alt="event logo" />
             
             <div className="mb-6">
                 <div className="flex gap-3 flex-wrap mb-3">
@@ -54,7 +54,7 @@ const Event = (props: EventProps) => {
             <footer className="mt-4 flex gap-4 items-center">
                 <div>
                     <span className="sr-only">Sagnol Kamdem</span>
-                    <Image className="w-10 h-10 rounded-full" src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHBlcnNvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60" alt="author photo" />
+                    <img className="w-10 h-10 rounded-full" src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHBlcnNvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60" alt="author photo" />
                 </div>
                 <div className="flex flex-col justify-between">
                     <p className="font-semibold text-slate-400">Sagnol Kamdem</p>
