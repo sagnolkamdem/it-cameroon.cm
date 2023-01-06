@@ -2,12 +2,12 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import clsx from "clsx";
 import { Transition } from "@headlessui/react";
-import { MoonIcon, SunIcon, Bars3Icon, ClockIcon, ArrowLongRightIcon } from "@heroicons/react/20/solid"
+import { MoonIcon, SunIcon, Bars3Icon, ArrowLongRightIcon } from "@heroicons/react/20/solid"
 
 import Button from "@/components/button/Button";
 import Search from "../../input/Search";
 
-const HeaderOffline = () => {
+const Header = () => {
 
     const [theme, setTheme] = useState('dark');
     const [isShowing, setIsShowing] = useState(false);
@@ -196,4 +196,4 @@ const HeaderOffline = () => {
      );
 }
  
-export default HeaderOffline;
+export default Header;

@@ -1,12 +1,13 @@
-import BadgeSimple from "@/components/badge/Badge-simple";
-import Button from "@/components/button/Button";
-import LayoutWithFooter from "@/components/layout/Layout-with-footer";
+import Image from "next/image";
 import { CalendarDaysIcon, MapPinIcon } from "@heroicons/react/20/solid";
-import Link from "next/link";
+
+import Badge from "@/components/badge/Badge";
+import Button from "@/components/button/Button";
+import Layout from "@/components/layout/Layout";
 
 const EventDetails = () => {
     return ( 
-        <LayoutWithFooter>
+        <Layout>
             <div className="relative py-16 sm:py-20">
                 <div className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:items-start lg:gap-24 lg:px-8">
                     
@@ -25,13 +26,13 @@ const EventDetails = () => {
                             </div>
                             <div className="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:max-w-none lg:px-0 lg:py-20">
                                 <div className="relative overflow-hidden rounded-2xl pt-64 pb-10 shadow-xl">
-                                    <img className="absolute inset-0 h-full w-full object-cover" src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8d2ViJTIwZGV2ZWxvcG1lbnR8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60" alt="article image" />
+                                    <Image className="absolute inset-0 h-full w-full object-cover" src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8d2ViJTIwZGV2ZWxvcG1lbnR8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60" alt="article image" />
                                     <div className="absolute inset-0 bg-gradient-to-t from-primary-50 via-primary-50 opacity-50"></div>
                                     <div className="relative px-8">
                                         <div className="flex flex-wrap gap-3">
-                                            <BadgeSimple>Web development</BadgeSimple>
-                                            <BadgeSimple>Web development</BadgeSimple>
-                                            <BadgeSimple>Web development</BadgeSimple>
+                                            <Badge>Web development</Badge>
+                                            <Badge>Web development</Badge>
+                                            <Badge>Web development</Badge>
                                         </div>
                                         <blockquote className="mt-8">
                                             <div className="relative text-lg font-medium text-white md:flex-grow">
@@ -44,7 +45,7 @@ const EventDetails = () => {
                                             <footer className="mt-4 flex gap-4 items-center">
                                                 <div>
                                                     <span className="sr-only">Sagnol Kamdem</span>
-                                                    <img className="w-10 h-10 rounded-full" src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHBlcnNvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60" alt="author photo" />
+                                                    <Image className="w-10 h-10 rounded-full" src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHBlcnNvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60" alt="author photo" />
                                                 </div>
                                                 <div className="flex flex-col justify-between">
                                                     <p className="font-semibold text-slate-700">Sagnol Kamdem</p>
@@ -88,7 +89,7 @@ const EventDetails = () => {
                     </div>
                 </div>
             </div>
-        </LayoutWithFooter>
+        </Layout>
      );
 }
  

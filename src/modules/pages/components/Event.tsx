@@ -1,8 +1,9 @@
-import { CalendarDaysIcon, MapPinIcon } from "@heroicons/react/20/solid";
 import clsx from "clsx";
+import Image from "next/image";
 import Link from "next/link";
+import { CalendarDaysIcon, MapPinIcon } from "@heroicons/react/20/solid";
 
-import BadgeSimple from "@/components/badge/Badge-simple";
+import Badge from "@/components/badge/Badge";
 import { EventProps } from "../interface/event.interface";
 
 const Event = (props: EventProps) => {
@@ -10,7 +11,7 @@ const Event = (props: EventProps) => {
         <li role="listitem" className="relative col-span-1 max-w-sm shadow-lg bg-white dark:bg-gray-800 p-6 mx-auto">
 
             <div className="absolute -top-1.5 -right-1.5">
-                <BadgeSimple class={clsx(
+                <Badge class={clsx(
                     "bg-danger-100 text-danger-800",
                     {
                         "bg-secondary-100 text-secondary-800": props.status === "coming",
@@ -27,16 +28,16 @@ const Event = (props: EventProps) => {
                         <circle cx="4" cy="4" r="3" />
                     </svg>
                     {props.status}
-                </BadgeSimple>
+                </Badge>
             </div>
 
-            <img className="w-full h-60 object-cover mb-8" src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8d2ViJTIwZGV2ZWxvcG1lbnR8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60" alt="event logo" />
+            <Image className="w-full h-60 object-cover mb-8" src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8d2ViJTIwZGV2ZWxvcG1lbnR8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60" alt="event logo" />
             
             <div className="mb-6">
                 <div className="flex gap-3 flex-wrap mb-3">
-                    <BadgeSimple>Web development</BadgeSimple>
-                    <BadgeSimple>Artificial intelligence</BadgeSimple>
-                    <BadgeSimple>personnal development</BadgeSimple>
+                    <Badge>Web development</Badge>
+                    <Badge>Artificial intelligence</Badge>
+                    <Badge>personnal development</Badge>
                 </div>
                 <Link href={`events/${123}`} className="font-semibold text-2xl text-slate-900 dark:text-white mb-2">How to stand out as a woman in tech in Cameroon ?</Link>
                 <p className="text-base font-semibold text-slate-400 flex gap-2 capitalize">
@@ -53,7 +54,7 @@ const Event = (props: EventProps) => {
             <footer className="mt-4 flex gap-4 items-center">
                 <div>
                     <span className="sr-only">Sagnol Kamdem</span>
-                    <img className="w-10 h-10 rounded-full" src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHBlcnNvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60" alt="author photo" />
+                    <Image className="w-10 h-10 rounded-full" src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHBlcnNvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60" alt="author photo" />
                 </div>
                 <div className="flex flex-col justify-between">
                     <p className="font-semibold text-slate-400">Sagnol Kamdem</p>

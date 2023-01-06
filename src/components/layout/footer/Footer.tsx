@@ -5,112 +5,86 @@ const Footer = () => {
         <footer className="bg-gray-100 dark:bg-gray-800 mt-20" aria-labelledby="footer-heading">
             <h2 id="footer-heading" className="sr-only">Footer</h2>
             <div className="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-                <div className="pb-8 xl:grid xl:grid-cols-5 xl:gap-8">
-                <div className="grid grid-cols-2 gap-8 xl:col-span-4">
-                    <div className="md:grid md:grid-cols-2 md:gap-8">
-                        <div>
-                            <h3 className="text-lg font-bold dark:text-white text-slate-900">Solutions</h3>
-                            <ul role="list" className="mt-4 space-y-4">
-                                <li>
-                                    <Link href="#" className="text-base dark:text-slate-300 dark:hover:text-white text-slate-600 hover:text-slate-800">Marketing</Link>
-                                </li>
-
-                                <li>
-                                    <Link href="#" className="text-base dark:text-slate-300 dark:hover:text-white text-slate-600 hover:text-slate-800">Analytics</Link>
-                                </li>
-
-                                <li>
-                                    <Link href="#" className="text-base dark:text-slate-300 dark:hover:text-white text-slate-600 hover:text-slate-800">Commerce</Link>
-                                </li>
-
-                                <li>
-                                    <Link href="#" className="text-base dark:text-slate-300 dark:hover:text-white text-slate-600 hover:text-slate-800">Insights</Link>
-                                </li>
-                            </ul>
-                        </div>
-                        <div className="mt-12 md:mt-0">
-                            <h3 className="text-lg font-bold dark:text-white text-slate-900">Support</h3>
-                            <ul role="list" className="mt-4 space-y-4">
-                                <li>
-                                    <Link href="#" className="text-base dark:text-slate-300 dark:hover:text-white text-slate-600 hover:text-slate-800">Pricing</Link>
-                                </li>
-
-                                <li>
-                                    <Link href="#" className="text-base dark:text-slate-300 dark:hover:text-white text-slate-600 hover:text-slate-800">Documentation</Link>
-                                </li>
-
-                                <li>
-                                    <Link href="#" className="text-base dark:text-slate-300 dark:hover:text-white text-slate-600 hover:text-slate-800">Guides</Link>
-                                </li>
-
-                                <li>
-                                    <Link href="#" className="text-base dark:text-slate-300 dark:hover:text-white text-slate-600 hover:text-slate-800">API Status</Link>
-                                </li>
-                            </ul>
-                        </div>
-                        </div>
-                        <div className="md:grid md:grid-cols-2 md:gap-8">
-                        <div>
-                            <h3 className="text-lg font-bold dark:text-white text-slate-900">Company</h3>
-                            <ul role="list" className="mt-4 space-y-4">
-                                <li>
-                                    <Link href="#" className="text-base dark:text-slate-300 dark:hover:text-white text-slate-600 hover:text-slate-800">About</Link>
-                                </li>
-
-                                <li>
-                                    <Link href="#" className="text-base dark:text-slate-300 dark:hover:text-white text-slate-600 hover:text-slate-800">Blog</Link>
-                                </li>
-
-                                <li>
-                                    <Link href="#" className="text-base dark:text-slate-300 dark:hover:text-white text-slate-600 hover:text-slate-800">Jobs</Link>
-                                </li>
-
-                                <li>
-                                    <Link href="#" className="text-base dark:text-slate-300 dark:hover:text-white text-slate-600 hover:text-slate-800">Press</Link>
-                                </li>
-
-                                <li>
-                                    <Link href="#" className="text-base dark:text-slate-300 dark:hover:text-white text-slate-600 hover:text-slate-800">Partners</Link>
-                                </li>
-                            </ul>
-                        </div>
-                        <div className="mt-12 md:mt-0">
-                            <h3 className="text-lg font-bold dark:text-white text-slate-900">Legal</h3>
-                            <ul role="list" className="mt-4 space-y-4">
+                <div className="pb-8 grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-8">
+                    <div>
+                        <h3 className="text-lg font-bold dark:text-white text-slate-900">Solutions</h3>
+                        <ul role="list" className="mt-4 space-y-4">
                             <li>
-                                <Link href="#" className="text-base dark:text-slate-300 dark:hover:text-white text-slate-600 hover:text-slate-800">Claim</Link>
+                                <Link href="#" className="text-base dark:text-slate-300 dark:hover:text-white text-slate-600 hover:text-slate-800">Analytics</Link>
                             </li>
 
                             <li>
-                                <Link href="#" className="text-base dark:text-slate-300 dark:hover:text-white text-slate-600 hover:text-slate-800">Privacy</Link>
+                                <Link href="#" className="text-base dark:text-slate-300 dark:hover:text-white text-slate-600 hover:text-slate-800">Feedback</Link>
                             </li>
 
                             <li>
-                                <Link href="#" className="text-base dark:text-slate-300 dark:hover:text-white text-slate-600 hover:text-slate-800">Terms</Link>
+                                <Link href="#" className="text-base dark:text-slate-300 dark:hover:text-white text-slate-600 hover:text-slate-800">Insights</Link>
                             </li>
-                            </ul>
-                        </div>
+                        </ul>
                     </div>
-                </div>
-                <div className="mt-12 xl:mt-0">
-                    <h3 className="text-lg font-bold dark:text-white text-slate-900">Language</h3>
-                    <form className="mt-4 sm:max-w-xs">
-                        <fieldset className="w-full">
-                            <label htmlFor="language" className="sr-only">Language</label>
-                            <div className="relative">
-                                <select id="language" name="language" className="block w-full appearance-none rounded-md border border-transparent dark:bg-gray-700 bg-none py-2 pl-3 pr-10 text-base dark:text-white text-slate-900 placeholder:text-slate-400 focus:border-primary-600 focus:outline-none focus:ring-primary-600 sm:text-sm">
-                                    <option selected>English</option>
-                                    <option>French</option>
-                                </select>
-                                <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2">
-                                    <svg className="h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
-                                    </svg>
+
+                    <div>
+                        <h3 className="text-lg font-bold dark:text-white text-slate-900">Plan</h3>
+                        <ul role="list" className="mt-4 space-y-4">
+                            <li>
+                                <Link href="#" className="text-base dark:text-slate-300 dark:hover:text-white text-slate-600 hover:text-slate-800">Made in CMR</Link>
+                            </li>
+
+                            <li>
+                                <Link href="blog" className="text-base dark:text-slate-300 dark:hover:text-white text-slate-600 hover:text-slate-800">Blog</Link>
+                            </li>
+
+                            <li>
+                                <Link href="events" className="text-base dark:text-slate-300 dark:hover:text-white text-slate-600 hover:text-slate-800">Events</Link>
+                            </li>
+
+                            <li>
+                                <Link href="carreers" className="text-base dark:text-slate-300 dark:hover:text-white text-slate-600 hover:text-slate-800">Carreers</Link>
+                            </li>
+
+                            <li>
+                                <Link href="#" className="text-base dark:text-slate-300 dark:hover:text-white text-slate-600 hover:text-slate-800">Inspirations</Link>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div className="mt-12 md:mt-0">
+                        <h3 className="text-lg font-bold dark:text-white text-slate-900">Legal</h3>
+                        <ul role="list" className="mt-4 space-y-4">
+                        <li>
+                            <Link href="#" className="text-base dark:text-slate-300 dark:hover:text-white text-slate-600 hover:text-slate-800">Claim</Link>
+                        </li>
+
+                        <li>
+                            <Link href="#" className="text-base dark:text-slate-300 dark:hover:text-white text-slate-600 hover:text-slate-800">Privacy</Link>
+                        </li>
+
+                        <li>
+                            <Link href="#" className="text-base dark:text-slate-300 dark:hover:text-white text-slate-600 hover:text-slate-800">Terms</Link>
+                        </li>
+                        </ul>
+                    </div>
+
+                    <div className="mt-12 xl:mt-0">
+                        <h3 className="text-lg font-bold dark:text-white text-slate-900">Language</h3>
+                        <form className="mt-4 sm:max-w-xs">
+                            <fieldset className="w-full">
+                                <label htmlFor="language" className="sr-only">Language</label>
+                                <div className="relative">
+                                    <select id="language" name="language" className="block w-full appearance-none rounded-md border border-transparent dark:bg-gray-700 bg-none py-2 pl-3 pr-10 text-base dark:text-white text-slate-900 placeholder:text-slate-400 focus:border-primary-600 focus:outline-none focus:ring-primary-600 sm:text-sm">
+                                        <option selected>English</option>
+                                        <option>French</option>
+                                    </select>
+                                    <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2">
+                                        <svg className="h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
+                                        </svg>
+                                    </div>
                                 </div>
-                            </div>
-                        </fieldset>
-                    </form>
-                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+
                 </div>
                 
                 <div className="mt-8 border-t border-gray-700 pt-8 md:flex md:items-center md:justify-between">
