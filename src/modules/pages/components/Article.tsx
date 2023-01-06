@@ -37,7 +37,7 @@ const Article = ({link}: {link: string}) => {
                                 <span className="link link-underline link-underline-primary">How to use vscode at 2023</span>
                             </Link>
                             <p className="mt-3 text-base text-slate-500 dark:text-slate-400">
-                            Utilisez-vous toujours du texte sublime ? si oui, laissez-moi vous dire que vscode va vous simplifier la vie...
+                                Utilisez-vous toujours du Sublime text ? si oui, laissez-moi vous dire que vscode va vous simplifier la vie...
                             </p>
                         </div>
                     </div>
