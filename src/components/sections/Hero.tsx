@@ -25,7 +25,7 @@ const Hero = () => {
                         <div className="hidden sm:mb-8 sm:flex sm:justify-center">
                             <div className="relative overflow-hidden rounded-full py-1.5 px-4 text-sm leading-6 ring-1 ring-primary-600 hover:ring-primary-900">
                                 <span className="text-gray-600 dark:text-slate-200">
-                                    We will be available soon. 
+                                    We will be available very soon. 
                                     <Link href="#" className="hover:text-primary-800 ml-1 font-semibold text-primary-600">
                                         <span className="absolute inset-0" aria-hidden="true"></span>
                                             Read more 
