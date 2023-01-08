@@ -1,23 +1,29 @@
+import { BanknotesIcon, BookmarkIcon, BriefcaseIcon } from "@heroicons/react/20/solid";
+
 import Banner from "@/components/banner/Banner";
 import Breadscrumps from "@/components/breadscrumps/Breadscrumps";
 import { BreadscrumpsProps } from "@/components/breadscrumps/breadscrumps.interface";
 import Search from "@/components/input/Search";
 import Layout from "@/components/layout/Layout";
-import Article from "@/modules/pages/components/Article";
+import Badge from "@/components/badge/Badge";
+import Link from "next/link";
+import Job from "@/modules/pages/components/job";
 
-const Blog = () => {
+
+const Jobs = () => {
 
     const breads: BreadscrumpsProps = {
         breads: [
             {
-                name: "blog",
-                link: "blog",
+                name: "jobs",
+                link: "jobs",
             }
         ]
     }
 
     return ( 
         <Layout>
+
             <Banner>
                 <div className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]">
                     <svg className="relative left-[calc(50%-11rem)] -z-10 h-[21.1875rem] max-w-none -translate-x-1/2 rotate-[30deg] sm:left-[calc(50%-30rem)] sm:h-[42.375rem]" viewBox="0 0 1155 678" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -36,10 +42,10 @@ const Blog = () => {
                             <Breadscrumps props={breads}/>
                         </div>
                         <h1 className="mt-6 text-[1.75rem] font-heading font-extrabold leading-9 tracking-tight text-slate-900 md:text-4xl dark:text-white">
-                            Articles
+                            Jobs
                         </h1>
                         <p className="mt-3 text-base text-slate-700 md:mt-5 md:text-xl dark:text-slate-300">
-                            Tips and advice for professionals, students and employers.
+                            Collection of advertisements published on job search sites.
                         </p>
 
                         <Search classMeta="mt-8 lg:hidden" />
@@ -76,13 +82,12 @@ const Blog = () => {
 
                             <div className="flex flex-col gap-3">
 
-                                <button className="text-sm font-semibold max-w-fit dark:text-slate-300 text-slate-600 hover:text-slate-700 dark:hover:text-slate-400 capitalize">web Developement</button>
-                                <button className="text-sm font-semibold max-w-fit dark:text-slate-300 text-slate-600 hover:text-slate-700 dark:hover:text-slate-400 capitalize">Design</button>
-                                <button className="text-sm font-semibold max-w-fit dark:text-slate-300 text-slate-600 hover:text-slate-700 dark:hover:text-slate-400 capitalize">personnal Developpement</button>
-                                <button className="text-sm font-semibold max-w-fit dark:text-slate-300 text-slate-600 hover:text-slate-700 dark:hover:text-slate-400 capitalize">Law</button>
-                                <button className="text-sm font-semibold max-w-fit dark:text-slate-300 text-slate-600 hover:text-slate-700 dark:hover:text-slate-400 capitalize">Salary</button>
-                                <button className="text-sm font-semibold max-w-fit dark:text-slate-300 text-slate-600 hover:text-slate-700 dark:hover:text-slate-400 capitalize">Artificial intelligence</button>
-                                <button className="text-sm font-semibold max-w-fit dark:text-slate-300 text-slate-600 hover:text-slate-700 dark:hover:text-slate-400 capitalize">carreers</button>
+                                <button className="text-sm font-semibold max-w-fit dark:text-slate-300 text-slate-600 hover:text-slate-700 dark:hover:text-slate-400 capitalize">web Developer</button>
+                                <button className="text-sm font-semibold max-w-fit dark:text-slate-300 text-slate-600 hover:text-slate-700 dark:hover:text-slate-400 capitalize">Designer UI/UX</button>
+                                <button className="text-sm font-semibold max-w-fit dark:text-slate-300 text-slate-600 hover:text-slate-700 dark:hover:text-slate-400 capitalize">fullstack developer</button>
+                                <button className="text-sm font-semibold max-w-fit dark:text-slate-300 text-slate-600 hover:text-slate-700 dark:hover:text-slate-400 capitalize">backend developer</button>
+                                <button className="text-sm font-semibold max-w-fit dark:text-slate-300 text-slate-600 hover:text-slate-700 dark:hover:text-slate-400 capitalize">Data scientist</button>
+                                <button className="text-sm font-semibold max-w-fit dark:text-slate-300 text-slate-600 hover:text-slate-700 dark:hover:text-slate-400 capitalize">frontend developer</button>
                             
                             </div>
 
@@ -92,22 +97,23 @@ const Blog = () => {
 
                 </aside>
 
-                <ul className="col-span-3 grid grid-cols-1 max-sm:px-6 sm:grid-cols-2 lg:pl-16 gap-8" role="list">
-                    <Article link="123" />
-                    <Article link="123" />
-                    <Article link="123" />
-                    <Article link="123" />
-                    <Article link="123" />
-                    <Article link="123" />
-                    <Article link="123" />
-                    <Article link="123" />
+                <ul className="col-span-3 grid max-sm:px-6 lg:pl-16 gap-8" role="list">
+                    <Job />
+                    <Job />
+                    <Job />
+                    <Job />
+                    <Job />
+                    <Job />
+                    <Job />
+                    <Job />
+                    <Job />
+                    <Job />
                 </ul>
 
             </div>
-
 
         </Layout>
      );
 }
  
-export default Blog;
+export default Jobs;

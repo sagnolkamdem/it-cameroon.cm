@@ -4,7 +4,7 @@ import Link from "next/link";
 
 
 import cosna from "../../public/companies/cosna_Afrique_Logo.png";
-import dikalo from "../../public/companies/dikalo_logo_orange.png";
+import shopper from "../../public/companies/shopper.svg";
 import job from "../../public/companies/laravel-job-logo.png";
 import loov from "../../public/companies/loov-logo.png";
 import tranzak from "../../public/companies/tranzak_logo.png";
@@ -23,7 +23,7 @@ const MadeInCmr = () => {
                             <Image className="group-hover:grayscale-0 h-12 object-contain grayscale" src={cosna} alt="cosna afrique" />
                         </Link>
                         <Link href="/made-in-cmr/dikalo" className="group col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-                            <Image className="group-hover:grayscale-0 h-12 object-contain grayscale" src={dikalo} alt="dikalo" />
+                            <Image className="group-hover:grayscale-0 h-12 object-contain grayscale" src={shopper} alt="shopper" />
                         </Link>
                         <Link href="/made-in-cmr/laravel-cameroon-job" className="group col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
                             <Image className="group-hover:grayscale-0 h-12 object-contain grayscale" src={job} alt="laravel cameroon job" />

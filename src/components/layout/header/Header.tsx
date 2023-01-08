@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import clsx from "clsx";
 import { Transition } from "@headlessui/react";
 import { MoonIcon, SunIcon, Bars3Icon, ArrowLongRightIcon } from "@heroicons/react/20/solid"
@@ -8,6 +9,8 @@ import Button from "@/components/button/Button";
 import Search from "../../input/Search";
 
 const Header = () => {
+
+    let { pathname } = useRouter();
 
     const [theme, setTheme] = useState('dark');
     const [isShowing, setIsShowing] = useState(false);
@@ -21,6 +24,8 @@ const Header = () => {
         } else {
             document.documentElement.classList.remove('dark');
         }
+        console.log(pathname === '/blog');
+        
     }, []);
 
     useEffect(() => {
@@ -95,15 +100,65 @@ const Header = () => {
                                 <div className="mt-6 flow-root">
                                     <div className="-my-6 divide-y divide-gray-500/10">
                                         <div className="space-y-2 py-6">
-                                            <Link href="#" className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-slate-700 hover:text-slate-900 dark:text-white dark:hover:text-slate-100">Made in CMR</Link>
+                                            <Link 
+                                                href="/made-in-cmr" 
+                                                className={clsx(
+                                                    "-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7",
+                                                    {
+                                                        "text-primary-600 hover:text-primary-400 dark:text-primary-600": pathname === "/made-in-cmr",
+                                                        "text-slate-700 hover:text-slate-900 dark:text-white dark:hover:text-slate-100": pathname !== "/made-in-cmr",
+                                                    }
+                                                )}>
+                                                    Made in CMR
+                                            </Link>
 
-                                            <Link href="#" className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-slate-700 hover:text-slate-900 dark:text-white dark:hover:text-slate-100">Carreers</Link>
+                                            <Link 
+                                                href="/carreers" 
+                                                className={clsx(
+                                                    "-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7",
+                                                    {
+                                                        "text-primary-600 hover:text-primary-400 dark:text-primary-600": pathname === "/jobs",
+                                                        "text-slate-700 hover:text-slate-900 dark:text-white dark:hover:text-slate-100": pathname !== "/jobs",
+                                                    }
+                                                )}>
+                                                    Carreers
+                                                </Link>
 
-                                            <Link href="#" className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-slate-700 hover:text-slate-900 dark:text-white dark:hover:text-slate-100">Inspirations</Link>
+                                            <Link 
+                                                href="/inspiration" 
+                                                className={clsx(
+                                                    "-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7",
+                                                    {
+                                                        "text-primary-600 hover:text-primary-400 dark:text-primary-600": pathname === "/inspirations",
+                                                        "text-slate-700 hover:text-slate-900 dark:text-white dark:hover:text-slate-100": pathname !== "/inspirations",
+                                                    }
+                                                )}>
+                                                    Inspirations
+                                            </Link>
 
-                                            <Link href="/events" className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-slate-700 hover:text-slate-900 dark:text-white dark:hover:text-slate-100">Events</Link>
+                                            <Link 
+                                                href="/events" 
+                                                className={clsx(
+                                                    "-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7",
+                                                    {
+                                                        "text-primary-600 hover:text-primary-400 dark:text-primary-600": pathname === "/events",
+                                                        "text-slate-700 hover:text-slate-900 dark:text-white dark:hover:text-slate-100": pathname !== "/events",
+                                                    }
+                                                )}>
+                                                    Events
+                                                </Link>
 
-                                            <Link href="/blog" className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-slate-700 hover:text-slate-900 dark:text-white dark:hover:text-slate-100">Blog</Link>
+                                            <Link 
+                                                href="/blog" 
+                                                className={clsx(
+                                                    "-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7",
+                                                    {
+                                                        "text-primary-600 hover:text-primary-400 dark:text-primary-600": pathname === "/blog",
+                                                        "text-slate-700 hover:text-slate-900 dark:text-white dark:hover:text-slate-100": pathname !== "/blog",
+                                                    }
+                                                )}>
+                                                    Blog
+                                            </Link>
                                         </div>
                                         <div className="py-6">
                                             <div className="flex flex-col gap-6 items-start justify-start">
@@ -124,11 +179,65 @@ const Header = () => {
 
                 <div className="hidden xl:flex justify-end flex-1 ml-7">
                     <nav className="flex justify-end gap-6 items-center text-slate-700 hover:text-slate-900 dark:text-white dark:hover:text-slate-100">
-                        <a href="made-in-cmr" className="font-medium">Made in Cmr</a>
-                        <a href="carreers" className="font-medium">Careers</a>
-                        <a href="inspirations" className="font-medium">Inspirations</a>
-                        <a href="events" className="font-medium">Events</a>
-                        <a href="blog" className="font-medium">Blog</a>
+                        <Link 
+                            href="/made-in-cmr" 
+                            className={clsx(
+                                "-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7",
+                                {
+                                    "text-primary-600 hover:text-primary-400 dark:text-primary-600": pathname === "/made-in-cmr",
+                                    "text-slate-700 hover:text-slate-900 dark:text-white dark:hover:text-slate-100": pathname !== "/made-in-cmr",
+                                }
+                            )}>
+                                Made in CMR
+                        </Link>
+
+                        <Link 
+                            href="/jobs" 
+                            className={clsx(
+                                "-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7",
+                                {
+                                    "text-primary-600 hover:text-primary-400 dark:text-primary-600": pathname === "/carreers",
+                                    "text-slate-700 hover:text-slate-900 dark:text-white dark:hover:text-slate-100": pathname !== "/carreers",
+                                }
+                            )}>
+                                Jobs
+                            </Link>
+
+                        <Link 
+                            href="/inspiration" 
+                            className={clsx(
+                                "-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7",
+                                {
+                                    "text-primary-600 hover:text-primary-400 dark:text-primary-600": pathname === "/inspirations",
+                                    "text-slate-700 hover:text-slate-900 dark:text-white dark:hover:text-slate-100": pathname !== "/inspirations",
+                                }
+                            )}>
+                                Inspirations
+                        </Link>
+
+                        <Link 
+                            href="/events" 
+                            className={clsx(
+                                "-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7",
+                                {
+                                    "text-primary-600 hover:text-primary-400 dark:text-primary-600": pathname === "/events",
+                                    "text-slate-700 hover:text-slate-900 dark:text-white dark:hover:text-slate-100": pathname !== "/events",
+                                }
+                            )}>
+                                Events
+                            </Link>
+
+                        <Link 
+                            href="/blog" 
+                            className={clsx(
+                                "-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7",
+                                {
+                                    "text-primary-600 hover:text-primary-400 dark:text-primary-600": pathname === "/blog",
+                                    "text-slate-700 hover:text-slate-900 dark:text-white dark:hover:text-slate-100": pathname !== "/blog",
+                                }
+                            )}>
+                                Blog
+                        </Link>
                     </nav>
 
                     <div className="flex gap-4 items-center ml-20">
