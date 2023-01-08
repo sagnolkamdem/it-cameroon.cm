@@ -10,7 +10,7 @@ const Article = ({link}: {link: string}) => {
             <article className="relative space-y-8"  role="article">
                 <div className="flex-1">
                     <div className="">
-                        <Image className="object-cover md:w-full" src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8d2ViJTIwZGV2ZWxvcG1lbnR8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60" alt="" />
+                        <img className="object-cover md:w-full mx-auto" src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8d2ViJTIwZGV2ZWxvcG1lbnR8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60" alt="" />
                     </div>
                 </div>
                 <div>
@@ -18,7 +18,7 @@ const Article = ({link}: {link: string}) => {
                         <div className="shrink-0">
                             <p>
                                 <span className="sr-only">Sagnol Kamdem</span>
-                                <Image className="w-10 h-10 rounded-full" src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHBlcnNvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60" alt="author photo" />
+                                <img className="w-10 h-10 rounded-full" src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHBlcnNvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60" alt="author photo" />
                             </p>
                         </div>
                         <div className="ml-3 flex justify-between w-full items-center">
@@ -37,7 +37,7 @@ const Article = ({link}: {link: string}) => {
                                 <span className="link link-underline link-underline-primary">How to use vscode at 2023</span>
                             </Link>
                             <p className="mt-3 text-base text-slate-500 dark:text-slate-400">
-                            Utilisez-vous toujours du texte sublime ? si oui, laissez-moi vous dire que vscode va vous simplifier la vie...
+                                Utilisez-vous toujours du Sublime text ? si oui, laissez-moi vous dire que vscode va vous simplifier la vie...
                             </p>
                         </div>
                     </div>
