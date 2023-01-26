@@ -39,13 +39,13 @@ const Login = () => {
 
                             <div className="absolute flex items-center space-x-6 -bottom-16 translate-x-1/2 right-1/2">
                                 <button type="button" className="inline-flex items-center justify-center w-10 h-10 duration-200 ease-in-out transform bg-white rounded-md hover:scale-125 text-primary-600 backdrop-blur-lg dark:text-slate-400 dark:bg-gray-700/50 hover:bg-primary-50 dark:hover:bg-gray-700/30">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-5 h-5">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15m0 0l6.75 6.75M4.5 12l6.75-6.75" />
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-5 h-5">
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 12h-15m0 0l6.75 6.75M4.5 12l6.75-6.75" />
                                     </svg>
                                 </button>
                                 <button type="button" className="inline-flex items-center justify-center w-10 h-10 duration-200 ease-in-out transform bg-white rounded-md hover:scale-125 text-primary-600 backdrop-blur-lg dark:text-slate-400 dark:bg-gray-700/50 hover:bg-primary-50 dark:hover:bg-gray-700/30">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-5 h-5">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-5 h-5">
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
                                     </svg>
                                 </button>
                             </div>
