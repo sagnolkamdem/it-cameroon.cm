@@ -5,7 +5,7 @@ import Badge from "@/components/badge/Badge";
 
 const Job = () => {
     return ( 
-        <li className="relative mb-6 group p-8 border border-gray-400 rounded-md hover:shadow-lg dark:hover:shadow-2xl cursor-pointer hover:border-none">
+        <li className="relative mb-6 group p-8 border border-gray-200 dark:border-gray-800 rounded-md hover:shadow-lg dark:hover:shadow-2xl cursor-pointer hover:border-none">
             <Link href="https://jobs-staging.laravel.cm/jobs" target="_blank" className="absolute inset-0 z-10" />
             <article className="relative space-y-6" role="article">
                 <div className="flex justify-between">
