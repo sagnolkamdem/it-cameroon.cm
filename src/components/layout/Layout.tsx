@@ -1,14 +1,11 @@
 import Footer from "./footer/Footer";
 import Header from "./header/Header";
+import { LayoutProps } from "./layout.interface";
 
-interface Props {
-    children: React.ReactNode;
-    classMeta?: string;
-}
+const Layout = (props: LayoutProps) => {
 
-const Layout = (props: Props) => {
     return ( 
-        <main className="dark:bg-gray-900">
+        <main>
             <section>
                 <Header />
             </section>

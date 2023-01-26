@@ -39,25 +39,6 @@ const Feedback = () => {
           name: "Antonio Littel",
           work: "Frontend Developer",
         },
-    
-        {
-          id: 7,
-          message: "Mira’s teaching style is second to none. Mira’s teaching style is second to none. Everything was easy to follow every step of the way.",
-          name: "Antonio Littel",
-          work: "Frontend Developer",
-        },
-        {
-          id: 8,
-          message: "Mira’s teaching style is second to none. Mira’s teaching style is second to none. Mira’s teaching style is second to none. Everything was easy to follow every step of the way.",
-          name: "Antonio Littel",
-          work: "Frontend Developer",
-        },
-        {
-          id: 9,
-          message: "Mira’s teaching style is second to none. Mira’s teaching style is second to none. Mira’s teaching style is second to none. Everything was easy to follow every step of the way.",
-          name: "Antonio Littel",
-          work: "Frontend Developer",
-        }
       ];
 
     return ( 

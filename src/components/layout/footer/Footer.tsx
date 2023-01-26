@@ -124,7 +124,7 @@ const Footer = () => {
                             </svg>
                         </Link>
                     </div>
-                    <p className="mt-8 text-base text-slate-400 md:order-1 md:mt-0">&copy; 2023 TECH CAMER. All rights reserved.</p>
+                    <p className="mt-8 text-base text-slate-400 md:order-1 md:mt-0">&copy; 2023 TECH CMR. All rights reserved.</p>
                 </div>
             </div>
         </footer>

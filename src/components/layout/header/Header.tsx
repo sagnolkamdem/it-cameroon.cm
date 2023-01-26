@@ -24,8 +24,6 @@ const Header = () => {
         } else {
             document.documentElement.classList.remove('dark');
         }
-        console.log(pathname === '/blog');
-        
     }, []);
 
     useEffect(() => {
@@ -242,9 +240,9 @@ const Header = () => {
 
                     <div className="flex gap-4 items-center ml-20">
 
-                        <Button href="login">Se connecter</Button>
+                        <Button href="login">Log in</Button>
 
-                        <Button href="share-made-in-cameroon" intent="primary">Partager votre solution</Button>
+                        <Button href="register" intent="primary">Register</Button>
 
                         <button className="relarive w-8 h-8 rounded-full shadow-md flex justify-center items-center dark:bg-gray-700" onClick={handleClick}>
                             {
