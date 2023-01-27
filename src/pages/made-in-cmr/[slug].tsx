@@ -1,20 +1,20 @@
+import Badge from "@/components/badge/Badge";
 import Banner from "@/components/banner/Banner";
 import Breadscrumps from "@/components/breadscrumps/Breadscrumps";
-import { BreadscrumpsProps } from "@/components/breadscrumps/breadscrumps.interface";
-import Search from "@/components/input/Search";
 import Layout from "@/components/layout/Layout";
 
-import SingleMadeInCmr from "@/modules/pages/components/Made-in-cmr";
-
-
-const MadeInCmr = () => {
+const MadeInCmrDetail = () => {
 
     const breads = {
         breads: [
             {
                 name: "made in CMR",
                 link: "made-in-cmr",
-            }
+            },
+            {
+                name: "Laravel shopper",
+                link: "laravel-shopper",
+            },
         ]
     }
 
@@ -33,19 +33,23 @@ const MadeInCmr = () => {
                     </defs>
                     </svg>
                 </div>
+                
+                
                 <div className="flex justify-center text-center lg:text-left max-w-7xl mx-auto sm:px-6 lg:px-8">
                     <div className="flex max-w-[38rem] flex-col">
                         <div className="flex items-center justify-center gap-4 text-[0.8125rem] leading-6 text-primary-600 lg:justify-start dark:text-primary-500">
                             <Breadscrumps props={breads}/>
                         </div>
                         <h1 className="mt-6 text-[1.75rem] font-heading font-extrabold leading-9 tracking-tight text-slate-900 md:text-4xl dark:text-white">
-                            Made In CMR
+                            Laravel Shopper
                         </h1>
                         <p className="mt-3 text-base text-slate-700 md:mt-5 md:text-xl dark:text-slate-300">
-                            collection of solutions designed by Cameroonians to enrich tech made in cmr.
+                            The easiest way to manage your business in-store & online!
                         </p>
-
-                        <Search classMeta="mt-8 lg:hidden" />
+                        <div className="mt-4 space-x-2 space-y-2">
+                            <Badge>Fintech</Badge>
+                            <Badge>E-commerce</Badge>
+                        </div>
                     </div>
 
                     <div className="hidden lg:flex lg:flex-auto lg:justify-center"></div>
@@ -65,61 +69,41 @@ const MadeInCmr = () => {
                 </div>
             </Banner>
 
-            
             <div className="lg:grid lg:grid-cols-4 max-w-7xl mx-auto py-12 sm:px-6 lg:px-8">
 
                 <aside className="col-span-1 hidden lg:block">
                     
                     <div className="sticky top-10">
-                        <Search classMeta="mb-8" />
 
-                        <div className="space-y-4">
+                        <div className="flex flex-col gap-3">
 
-                            <h3 className="text-lg font-bold text-primary-600">Categories</h3>
+                            <img className="w-20 h-20 p-2 shadow-sm object-contain" src="https://laravelshopper.io/images/logomark-light.svg" alt="shopper logo" />
 
-                            <div className="flex flex-col gap-3">
+                            <h3 className="mt-4 text-sm font-semibold leading-7 text-zinc-900 dark:text-white underline font-['dancing_moon_script']">
+                                <a href="">
+                                    <span className="absolute inset-0 rounded-2xl text-slate-700 dark:text-slate-200"></span>
+                                    by Shopper Labs
+                                </a>
+                            </h3>
 
-                                <button className="text-sm font-semibold max-w-fit dark:text-slate-300 text-slate-600 hover:text-slate-700 dark:hover:text-slate-400 capitalize">Fintech</button>
-                                <button className="text-sm font-semibold max-w-fit dark:text-slate-300 text-slate-600 hover:text-slate-700 dark:hover:text-slate-400 capitalize">Sport</button>
-                                <button className="text-sm font-semibold max-w-fit dark:text-slate-300 text-slate-600 hover:text-slate-700 dark:hover:text-slate-400 capitalize">Social network</button>
-                                <button className="text-sm font-semibold max-w-fit dark:text-slate-300 text-slate-600 hover:text-slate-700 dark:hover:text-slate-400 capitalize">web development</button>
-                                <button className="text-sm font-semibold max-w-fit dark:text-slate-300 text-slate-600 hover:text-slate-700 dark:hover:text-slate-400 capitalize">E-commerce</button>
-                            
-                            </div>
-
-
+                            <h3 className="text-sm font-semibold max-w-fit dark:text-slate-300 text-slate-600 hover:text-slate-700 dark:hover:text-slate-400 capitalize"></h3>
+                        
                         </div>
+
                     </div>
 
                 </aside>
 
                 <ul className="col-span-3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-sm:px-6 lg:pl-16 gap-8" role="list">
 
-                    <SingleMadeInCmr link="12345"/>
-
-                    <SingleMadeInCmr link="12345"/>
-
-                    <SingleMadeInCmr link="12345"/>
-
-                    <SingleMadeInCmr link="12345"/>
-
-                    <SingleMadeInCmr link="12345"/>
-
-                    <SingleMadeInCmr link="12345"/>
-
-                    <SingleMadeInCmr link="12345"/>
-
-                    <SingleMadeInCmr link="12345"/>
-
-                    <SingleMadeInCmr link="12345"/>
+                    
                     
                 </ul>
 
             </div>
-
-
+            
         </Layout>
      );
 }
  
-export default MadeInCmr;
+export default MadeInCmrDetail;
