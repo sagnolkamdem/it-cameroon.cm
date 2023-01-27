@@ -4,7 +4,6 @@ export interface LayoutProps {
 }
 
 export interface AuthLayoutProps {
-    right: React.ReactNode;
-    left: React.ReactNode;
+    children: React.ReactNode;
     classMeta?: string;
 }

@@ -8,54 +8,15 @@ import Input from "@/components/input/input";
 
 const Login = () => {
     return ( 
-        <AuthLayout
-            
-            left={
-                <>
-                    <div className="absolute inset-x-0 top-0 h-full">
-                        <Image alt="monument" className=" object-fill w-full h-full" src={monument} />
-                    </div>
-                    <div className="absolute inset-0 bg-gradient-to-b from-transparent to-white dark:to-gray-900"></div>
+        <AuthLayout>
+            <section className="relative z-10 flex-1 hidden w-0 lg:block">
+                <div className="absolute inset-x-0 top-0 h-full">
+                    <Image alt="monument" className=" object-fill w-full h-full" src={monument} />
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-white dark:to-gray-900"></div>
+            </section>
 
-                    {/* <div className="absolute z-10 inset-x-0 bottom-20 flex flex-col justify-center items-center">
-                        
-                        <div className="relative w-full xl:max-w-[640px] mx-auto px-12 py-10 border border-gray-200 bg-white/25 rounded-lg backdrop-blur-sm dark:border-slate-800 dark:bg-gray-900/25">
-                            
-                            <div className="mx-auto">
-                                <span className="sr-only">Sagnol Kamdem</span>
-                                <img className="w-16 h-16 object-cover mx-auto border border-primary-600 rounded-full" src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHBlcnNvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60" alt="user" />
-                            </div>
-
-                            <div className="mt-4">
-                                <p className="font-semibold text-center text-slate-800 dark:text-slate-300">
-                                    Sagnol Kamdem,
-                                    <span className="ml-1 text-slate-500">Front-end developer</span>
-                                </p>
-                            </div>
-
-                            <p className="mt-6 text-lg font-medium leading-7 text-slate-700 dark:text-white">
-                                Nous avons utilisé TECH CAMER pour mettre en valeur notre bibliothèque UI et depuis la courbe des téléchergements ne cesse de croître.
-                            </p>
-
-                            <div className="absolute flex items-center space-x-6 -bottom-16 translate-x-1/2 right-1/2">
-                                <button type="button" className="inline-flex items-center justify-center w-10 h-10 duration-200 ease-in-out transform bg-white rounded-md hover:scale-125 text-primary-600 backdrop-blur-lg dark:text-slate-400 dark:bg-gray-700/50 hover:bg-primary-50 dark:hover:bg-gray-700/30">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-5 h-5">
-                                        <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 12h-15m0 0l6.75 6.75M4.5 12l6.75-6.75" />
-                                    </svg>
-                                </button>
-                                <button type="button" className="inline-flex items-center justify-center w-10 h-10 duration-200 ease-in-out transform bg-white rounded-md hover:scale-125 text-primary-600 backdrop-blur-lg dark:text-slate-400 dark:bg-gray-700/50 hover:bg-primary-50 dark:hover:bg-gray-700/30">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-5 h-5">
-                                        <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
-                                    </svg>
-                                </button>
-                            </div>
-
-                        </div>
-                    </div> */}
-                </>
-            }
-
-            right={
+            <section className="relative z-10 max-lg:w-full items-center flex flex-col justify-center flex-1 px-4 py-12 sm:px-6 lg:flex-none lg:px-20 xl:px-24">
                 <div className="space-y-8 max-w-sm mx-auto pt-20">
                     <div className="h-20">Logo</div>
                     <div className="space-y-3">
@@ -66,9 +27,19 @@ const Login = () => {
 
                         <div className="space-y-5">
 
-                            <Input type="email" name="email" placeholder="Sagnolkamdem@gmail.com" />
+                            <Input type="email" name="email" label="email" placeholder="Sagnolkamdem@gmail.com" />
 
-                            <Input type="password" name="password" persistType="password" placeholder="********" />
+                            <Input type="password" name="password" label="password" placeholder="********" />
+                            
+                            <div className="flex items-center justify-between">
+                                <label htmlFor="remember-me" className="flex items-center cursor-pointer">
+                                    <input id="remember-me" name="remember-me" type="checkbox" className="w-4 h-4 rounded text-primary-600 border-slate-300 focus:ring-primary-500 dark:bg-gray-800 dark:border-slate-700 dark:focus:ring-offset-gray-800" />
+                                    <span className="block ml-2 text-sm text-slate-700 dark:text-slate-300">Remember me</span>
+                                </label>
+                                <div className="text-sm">
+                                    <a className="font-medium text-primary-600 hover:text-primary-500" href="forgot-password">Forgot password?</a>
+                                </div>
+                            </div>
 
                         </div>
                             
@@ -77,14 +48,13 @@ const Login = () => {
                     </form>
                     <p className="font-normal text-sm dark:text-white">
                         You don't have an account ?
-                        <a href="/register" className="ml-1 whitespace-nowrap text-primary-700">
+                        <a href="/register" className="ml-1 whitespace-nowrap font-bold text-base text-primary-600 hover:text-primary-500">
                             Register
                         </a>
                     </p>
                 </div>
-            }
-
-        ></AuthLayout>
+            </section>
+        </AuthLayout>
      );
 }
  

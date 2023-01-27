@@ -29,9 +29,7 @@ const AuthLayout = (props: AuthLayoutProps) => {
     return ( 
         <main className="relative flex min-h-full">
 
-            <section className="relative z-10 flex-1 hidden w-0 lg:block">{props.left}</section>
-
-            <section className="relative z-10 max-lg:w-full items-center flex flex-col justify-center flex-1 px-4 py-12 sm:px-6 lg:flex-none lg:px-20 xl:px-24">{props.right}</section>
+            {props.children}
 
         </main>
      );
