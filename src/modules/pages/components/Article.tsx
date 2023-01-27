@@ -1,6 +1,8 @@
-import BadgeSimple from "@/components/badge/Badge-simple";
-import { ArrowTopRightOnSquareIcon } from "@heroicons/react/20/solid";
+import Image from "next/image";
 import Link from "next/link";
+
+import Badge from "@/components/badge/Badge";
+import { ArrowTopRightOnSquareIcon } from "@heroicons/react/20/solid";
 
 const Article = ({link}: {link: string}) => {
     return ( 
@@ -8,7 +10,7 @@ const Article = ({link}: {link: string}) => {
             <article className="relative space-y-8"  role="article">
                 <div className="flex-1">
                     <div className="">
-                        <img className="object-cover md:w-full" src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8d2ViJTIwZGV2ZWxvcG1lbnR8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60" alt="" />
+                        <img className="object-cover md:w-full mx-auto" src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8d2ViJTIwZGV2ZWxvcG1lbnR8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60" alt="" />
                     </div>
                 </div>
                 <div>
@@ -35,14 +37,14 @@ const Article = ({link}: {link: string}) => {
                                 <span className="link link-underline link-underline-primary">How to use vscode at 2023</span>
                             </Link>
                             <p className="mt-3 text-base text-slate-500 dark:text-slate-400">
-                            Utilisez-vous toujours du texte sublime ? si oui, laissez-moi vous dire que vscode va vous simplifier la vie...
+                                Utilisez-vous toujours du Sublime text ? si oui, laissez-moi vous dire que vscode va vous simplifier la vie...
                             </p>
                         </div>
                     </div>
                     <div className="flex gap-2 flex-wrap mt-4 ">
-                        <BadgeSimple>Web development</BadgeSimple>
-                        <BadgeSimple>Web development</BadgeSimple>
-                        <BadgeSimple>Web development</BadgeSimple>
+                        <Badge>Web development</Badge>
+                        <Badge>Web development</Badge>
+                        <Badge>Web development</Badge>
                     </div>
                 </div>
             </article>
