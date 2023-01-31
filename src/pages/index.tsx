@@ -7,6 +7,7 @@ import Feedback from '@/components/sections/Feedback';
 export default function Home() {
 
   return (
+    
     <Layout>
 
       <Hero />

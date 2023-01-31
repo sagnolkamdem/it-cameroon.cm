@@ -48,7 +48,7 @@ const MadeInCmrDetail = () => {
                         </p>
                         <div className="mt-4 space-x-2 space-y-2">
                             <Badge>Fintech</Badge>
-                            <Badge>E-commerce</Badge>
+                            <Badge>Mobile</Badge>
                         </div>
                     </div>
 

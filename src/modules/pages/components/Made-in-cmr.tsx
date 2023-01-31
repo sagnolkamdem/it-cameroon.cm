@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { MadeInCmrProps } from "../interface/made-in-cmr.interface";
 
 const SingleMadeInCmr = (props: MadeInCmrProps) => {
@@ -17,7 +18,7 @@ const SingleMadeInCmr = (props: MadeInCmrProps) => {
             <div className="relative rounded-2xl px-4 pt-12 pb-4">
                 <div className="flex space-x-4 items-center">
                     <div className="flex items-center justify-center rounded-full bg-zinc-900/5 ring-1 ring-zinc-900/25 backdrop-blur-[2px] transition duration-300 group-hover:bg-white/50 group-hover:ring-zinc-900/25 dark:bg-white/7.5 dark:ring-white/15 dark:group-hover:bg-emerald-300/10 dark:group-hover:ring-emerald-400">
-                        <img className="w-12 h-12 p-2 shadow-sm object-contain" src="https://laravelshopper.io/images/logomark-light.svg" alt="shopper logo" />
+                        <Image width="0" height="0" className="w-12 h-12 p-2 shadow-sm object-contain" src="https://laravelshopper.io/images/logomark-light.svg" alt="shopper logo" />
                     </div>
                     <p className="capitalize text-xl text-slate-900 dark:text-white">Laravel Shopper</p>
                 </div>
