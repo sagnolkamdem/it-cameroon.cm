@@ -11,7 +11,7 @@ const Comment = ({name, message, work}: {name: string, message: string, work: st
             </blockquote>
             <figcaption className="mt-6 flex items-center">
                 <div className="overflow-hidden rounded-full bg-slate-50">
-                    <img src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cGVyc29ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60" alt="person" loading="lazy"  width="48" height="48" className="h-12 w-12 object-cover"/>
+                    <Image width="0" height="0"  src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cGVyc29ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60" alt="person" loading="lazy" className="h-12 w-12 object-cover"/>
                 </div>
                 <div className="ml-4">
                     <div className="text-base font-medium leading-6 tracking-tight text-slate-900 dark:text-white">{name}</div>

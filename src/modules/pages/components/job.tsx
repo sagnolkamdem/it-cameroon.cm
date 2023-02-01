@@ -2,6 +2,7 @@ import Link from "next/link";
 import { BanknotesIcon, BookmarkIcon, BriefcaseIcon } from "@heroicons/react/20/solid";
 
 import Badge from "@/components/badge/Badge";
+import Image from "next/image";
 
 const Job = () => {
     return ( 
@@ -10,7 +11,7 @@ const Job = () => {
             <article className="relative space-y-6" role="article">
                 <div className="flex justify-between">
                     <div className="flex space-x-4 items-center">
-                        <img className="w-12 h-12 shadow-sm object-contain" src="https://laravelshopper.io/images/logomark-light.svg" alt="shopper logo" />
+                        <Image height={40} width={40} className="shadow-sm object-contain" src="https://laravelshopper.io/images/logomark-light.svg" alt="shopper logo" />
 
                         <div className="flex flex-col justify-between">
                             <h3 className="text-lg font-semibold capitalize text-slate-900 dark:text-white lg:text-2xl group group-link-underline">

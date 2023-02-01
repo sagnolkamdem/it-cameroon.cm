@@ -31,7 +31,7 @@ const Event = (props: EventProps) => {
                 </Badge>
             </div>
 
-            <img className="w-full h-60 object-cover mb-8" src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8d2ViJTIwZGV2ZWxvcG1lbnR8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60" alt="event logo" />
+            <Image height={240} width={0} sizes="100vw" className="w-full object-cover mb-8" src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8d2ViJTIwZGV2ZWxvcG1lbnR8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60" alt="event logo" />
             
             <div className="mb-6">
                 <div className="flex gap-3 flex-wrap mb-3">
