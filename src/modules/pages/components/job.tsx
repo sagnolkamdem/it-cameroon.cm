@@ -14,16 +14,16 @@ const Job = () => {
                         <Image height={40} width={40} className="shadow-sm object-contain" src="https://laravelshopper.io/images/logomark-light.svg" alt="shopper logo" />
 
                         <div className="flex flex-col justify-between">
-                            <h3 className="text-lg font-semibold capitalize text-slate-900 dark:text-white lg:text-2xl group group-link-underline">
+                            <h3 className="sm:text-lg text-base font-semibold capitalize text-slate-900 dark:text-white lg:text-2xl group group-link-underline">
                                 Front end developer
                                 (CDI)
                             </h3>
                             <p className="text-base font-medium text-slate-700 dark:text-slate-200 capitalize">Shopper labs</p>
                         </div>
                     </div>
-                    <p className="text-xs text-slate-500 dark:text-slate-100">Posted 10 days ago</p>
+                    <p className="text-xs max-sm:hidden text-slate-500 dark:text-slate-100">Posted 10 days ago</p>
                 </div>
-                <div className="flex flex-wrap ml-16 gap-5">
+                <div className="flex flex-wrap sm:ml-16 gap-5">
                     <div className="flex space-x-2">
                         <BriefcaseIcon  aria-hidden="true" className="w-6 h-6 text-slate-800 dark:text-slate-100" />
                         <p className="text-slate-800 dark:text-slate-100 capitalize underline">Experience: intermediate</p>
@@ -37,18 +37,11 @@ const Job = () => {
                         <p className="text-slate-800 dark:text-slate-100 capitalize underline">Source: Laravel Jobs</p>
                     </div>
                 </div>
-                <div className="ml-16 flex space-x-2">
-                    <Badge>Typescript</Badge>
-                    <Badge>Javascript</Badge>
-                    <Badge>Angular</Badge>
-                    <Badge>React</Badge>
-                    <Badge>Nextjs</Badge>
-                    <Badge>Mysql</Badge>
-                    <Badge>Github actions</Badge>
-                    <Badge>Ngrx</Badge>
-                    <Badge>etc...</Badge>
+                <div className="sm:ml-16 flex space-x-2">
+                    <Badge>Partial remote</Badge>
+                    <Badge>Douala</Badge>
                 </div>
-                <p className="ml-16 text-red-500 underline">Expires on: 03/12/2023</p>
+                <p className="sm:ml-16 text-red-500 underline">Expires on: 03/12/2023</p>
             </article>
         </li>
      );

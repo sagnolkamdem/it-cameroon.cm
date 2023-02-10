@@ -15,7 +15,7 @@ const Register = () => {
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent to-white dark:to-gray-900"></div>
 
-                <div className="absolute z-10 inset-x-0 bottom-20 flex flex-col justify-center items-center">
+                <div className="absolute z-10 inset-x-0 bottom-10 flex flex-col justify-center items-center">
                     
                     <div className="relative w-full xl:max-w-[640px] mx-auto px-12 py-10 border border-gray-200 bg-white/25 rounded-lg backdrop-blur-sm dark:border-slate-800 dark:bg-gray-900/25">
                         
@@ -51,6 +51,7 @@ const Register = () => {
                     </div>
                 </div>
             </section>
+
             <section className="relative z-10 max-lg:w-full items-center flex flex-col justify-center flex-1 px-4 py-12 sm:px-6 lg:flex-none lg:px-20 xl:px-24">
                 <div className="space-y-8 max-w-sm mx-auto">
                     <div className="">Logo</div>
