@@ -1,4 +1,7 @@
+import Image from "next/image";
 import Link from "next/link";
+
+import bigLogo from "../../../public/logo/complete.png";
 
 const Footer = () => {
     return ( 
@@ -7,27 +10,26 @@ const Footer = () => {
             <div className="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
                 <div className="pb-8 grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-8">
                     <div>
-                        <h3 className="text-lg font-bold dark:text-white text-slate-900">Solutions</h3>
-                        <ul role="list" className="mt-4 space-y-4">
-                            <li>
-                                <Link href="#" className="text-base dark:text-slate-300 dark:hover:text-white text-slate-600 hover:text-slate-800">Analytics</Link>
-                            </li>
+                        <div className="mb-10">
+                            <Image width={200} height={40} src={bigLogo} alt="tech camer logo"/>
+                        </div>
 
-                            <li>
-                                <Link href="#" className="text-base dark:text-slate-300 dark:hover:text-white text-slate-600 hover:text-slate-800">Feedback</Link>
-                            </li>
+                        <div className="flex items-center">
+                            <p className="text-slate-300">
+                                Logo made by
+                                <Link className="ml-1 text-slate-800 dark:text-white underline" href="#">Rayan Tsolefack</Link>
+                            </p>
+                            
+                            <Image width={40} height={40} className="ml-2 border border-primary-600 w-10 h-10 rounded-full" src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHBlcnNvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60" alt="rayan profile photo" />
+                        </div>
 
-                            <li>
-                                <Link href="#" className="text-base dark:text-slate-300 dark:hover:text-white text-slate-600 hover:text-slate-800">Insights</Link>
-                            </li>
-                        </ul>
                     </div>
 
                     <div>
                         <h3 className="text-lg font-bold dark:text-white text-slate-900">Plan</h3>
                         <ul role="list" className="mt-4 space-y-4">
                             <li>
-                                <Link href="#" className="text-base dark:text-slate-300 dark:hover:text-white text-slate-600 hover:text-slate-800">Made in CMR</Link>
+                                <Link href="made-in-cmr" className="text-base dark:text-slate-300 dark:hover:text-white text-slate-600 hover:text-slate-800">Made in CMR</Link>
                             </li>
 
                             <li>

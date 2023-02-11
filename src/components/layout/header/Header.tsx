@@ -1,16 +1,16 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { useRouter } from "next/router";
 import clsx from "clsx";
 import { Transition } from "@headlessui/react";
-import { MoonIcon, SunIcon, Bars3Icon, ArrowLongRightIcon, EllipsisHorizontalIcon } from "@heroicons/react/20/solid"
+import { MoonIcon, SunIcon, Bars3Icon, EllipsisHorizontalIcon } from "@heroicons/react/20/solid"
 
 import Button from "@/components/button/Button";
 import Search from "../../input/Search";
 
 
 import bigLogo from "../../../public/logo/complete.png";
-import Image from "next/image";
 
 const Header = () => {
 
@@ -66,9 +66,9 @@ const Header = () => {
             <div className="flex items-center">
 
                 <div className="flex items-center max-xl:w-full">
-                    <div className="h-full">
+                    <Link href="/" className="h-full">
                         <Image width={200} height={40} src={bigLogo} alt="tech camer logo"/>
-                    </div>
+                    </Link>
 
                     <Search classMeta="ml-7 xl:w-60 w-full"/>
 
@@ -287,31 +287,26 @@ const Header = () => {
                             <div className="absolute z-10 mt-3 top-10 w-screen max-w-xs px-2 sm:px-0 -translate-x-1/2 transform left-1/2">
                                 <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                                     <div className="relative grid gap-6 dark:bg-gray-800 bg-white px-5 py-6 sm:gap-8 sm:p-8">
-                                        <a href="#" className="-m-3 block rounded-md p-3 transition duration-150 ease-in-out hover:bg-gray-50 dark:hover:bg-gray-700">
-                                            <p className="text-base font-medium text-slate-900 dark:text-white">Blog</p>
-                                            <p className="mt-1 text-sm text-slate-500">Learn about tips, product updates and company culture.</p>
-                                        </a>
-                                
-                                        <a href="#" className="-m-3 block rounded-md p-3 transition duration-150 ease-in-out hover:bg-gray-50 dark:hover:bg-gray-700">
+                                        <Link href="/jobs" className="-m-3 block rounded-md p-3 transition duration-150 ease-in-out hover:bg-gray-50 dark:hover:bg-gray-700">
                                             <p className="text-base font-medium text-slate-900 dark:text-white">Jobs</p>
                                             <p className="mt-1 text-sm text-slate-500">Be aware of the latest job opportunities in tech.</p>
-                                        </a>
+                                        </Link>
                                 
-                                        <a href="#" className="-m-3 block rounded-md p-3 transition duration-150 ease-in-out hover:bg-gray-50 dark:hover:bg-gray-700">
+                                        <Link href="/inspirations" className="-m-3 block rounded-md p-3 transition duration-150 ease-in-out hover:bg-gray-50 dark:hover:bg-gray-700">
                                             <p className="text-base font-medium text-slate-900 dark:text-white">
                                                 Inspirations
                                                 <span className="ml-0.5 text-slate-400 text-xs">(Soon)</span>
                                             </p>
                                             <p className="mt-1 text-sm text-slate-500">Get inspired by the careers of the most famous engineers in Cameroon.</p>
-                                        </a>
+                                        </Link>
                                 
-                                        <a href="#" className="-m-3 block rounded-md p-3 transition duration-150 ease-in-out hover:bg-gray-50 dark:hover:bg-gray-700">
+                                        <Link href="careers" className="-m-3 block rounded-md p-3 transition duration-150 ease-in-out hover:bg-gray-50 dark:hover:bg-gray-700">
                                             <p className="text-base font-medium text-slate-900 dark:text-white">
                                                 Careers
                                                 <span className="ml-0.5 text-slate-400 text-xs">(Soon)</span>
                                             </p>
                                             <p className="mt-1 text-sm text-slate-500">Learn about the many careers available to you in tech.</p>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
