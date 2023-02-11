@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import AuthLayout from "@/components/layout/AuthLayout";
 import Button from "@/components/button/Button";
@@ -24,7 +25,7 @@ const Login = () => {
                     </div>
                     <div className="space-y-3">
                         <h1 className="font-semibold text-3xl dark:text-white">Sign in</h1>
-                        <p className="font-normal text-base text-slate-700 dark:text-slate-200">Happy to see you now, let's continue this beautiful adventure!</p>
+                        <p className="font-normal text-base text-slate-700 dark:text-slate-200">Happy to see you now, let&apos;s continue this beautiful adventure!</p>
                     </div>
                     <form className="space-y-10">
 
@@ -50,10 +51,10 @@ const Login = () => {
 
                     </form>
                     <p className="font-normal text-sm dark:text-white">
-                        You don't have an account ?
-                        <a href="/register" className="ml-1 whitespace-nowrap font-bold text-base text-primary-600 hover:text-primary-500">
+                        You don&apos;t have an account ?
+                        <Link href="/register" className="ml-1 whitespace-nowrap font-bold text-base text-primary-600 hover:text-primary-500">
                             Register
-                        </a>
+                        </Link>
                     </p>
                 </div>
             </section>

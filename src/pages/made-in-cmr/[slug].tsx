@@ -2,6 +2,7 @@ import Badge from "@/components/badge/Badge";
 import Banner from "@/components/banner/Banner";
 import Breadscrumps from "@/components/breadscrumps/Breadscrumps";
 import Layout from "@/components/layout/Layout";
+import Image from "next/image";
 
 const MadeInCmrDetail = () => {
 
@@ -77,7 +78,7 @@ const MadeInCmrDetail = () => {
 
                         <div className="flex flex-col gap-3">
 
-                            <img className="w-20 h-20 p-2 shadow-sm object-contain" src="https://laravelshopper.io/images/logomark-light.svg" alt="shopper logo" />
+                            <Image height={80} width={80} className="w-20 h-20 p-2 shadow-sm object-contain" src="https://laravelshopper.io/images/logomark-light.svg" alt="shopper logo" />
 
                             <h3 className="mt-4 text-sm font-semibold leading-7 text-zinc-900 dark:text-white underline font-['dancing_moon_script']">
                                 <a href="">

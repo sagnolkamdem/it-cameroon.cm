@@ -15,7 +15,7 @@ const Footer = () => {
                         </div>
 
                         <div className="flex items-center">
-                            <p className="text-slate-300">
+                            <p className="text-slate-500">
                                 Logo made by
                                 <Link className="ml-1 text-slate-800 dark:text-white underline" href="#">Rayan Tsolefack</Link>
                             </p>

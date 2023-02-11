@@ -11,7 +11,7 @@ const ResetPassword = () => {
                     <div className="h-20">Logo</div>
                     <div className="space-y-3">
                         <h1 className="font-semibold text-3xl dark:text-white">Reset password</h1>
-                        <p className="font-normal text-base text-slate-700 dark:text-slate-200">Happy to see you, let's continue this beautiful adventure!</p>
+                        <p className="font-normal text-base text-slate-700 dark:text-slate-200">Happy to see you, let&apos;s continue this beautiful adventure!</p>
                     </div>
 
                     <form className="space-y-10">

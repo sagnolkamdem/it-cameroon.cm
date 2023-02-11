@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import AuthLayout from "@/components/layout/AuthLayout";
 import Button from "@/components/button/Button";
@@ -22,7 +23,7 @@ const Register = () => {
                         
                         <div className="mx-auto">
                             <span className="sr-only">Sagnol Kamdem</span>
-                            <img className="w-16 h-16 object-cover mx-auto border border-primary-600 rounded-full" src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHBlcnNvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60" alt="user" />
+                            <Image height={64} width={64} className="w-16 h-16 object-cover mx-auto border border-primary-600 rounded-full" src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHBlcnNvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60" alt="user" />
                         </div>
 
                         <div className="mt-4">
@@ -81,9 +82,9 @@ const Register = () => {
                     </form>
                     <p className="font-normal text-sm dark:text-white">
                         Already have an account ?
-                        <a href="/login" className="ml-1 whitespace-nowrap font-bold text-base text-primary-600 hover:text-primary-500">
+                        <Link href="/login" className="ml-1 whitespace-nowrap font-bold text-base text-primary-600 hover:text-primary-500">
                             Log in
-                        </a>
+                        </Link>
                     </p>
                 </div>
             </section>
