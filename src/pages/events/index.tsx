@@ -65,7 +65,7 @@ const Events = () => {
             <ul role="list" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-between gap-8 max-w-7xl mx-auto py-12 sm:px-6 lg:px-8">
 
                 <Event status="coming" />
-                <Event status="coming" />
+                <Event status="past" />
                 <Event status="coming" />
                 <Event status="coming" />
                 <Event status="past" />

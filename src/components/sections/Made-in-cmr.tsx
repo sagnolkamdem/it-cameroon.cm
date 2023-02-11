@@ -20,19 +20,19 @@ const MadeInCmr = () => {
                 <div className="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:px-8">
                     <div className="grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
                         <Link href="/made-in-cmr/cosna-afrique" className="group col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-                            <Image className="group-hover:grayscale-0 h-12 object-contain grayscale" src={cosna} alt="cosna afrique" />
+                            <Image loading="lazy" className="group-hover:grayscale-0 h-12 object-contain grayscale" src={cosna} alt="cosna afrique" />
                         </Link>
                         <Link href="/made-in-cmr/dikalo" className="group col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-                            <Image className="group-hover:grayscale-0 h-12 object-contain grayscale" src={shopper} alt="shopper" />
+                            <Image loading="lazy" className="group-hover:grayscale-0 h-12 object-contain grayscale" src={shopper} alt="shopper" />
                         </Link>
                         <Link href="/made-in-cmr/laravel-cameroon-job" className="group col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-                            <Image className="group-hover:grayscale-0 h-12 object-contain grayscale" src={job} alt="laravel cameroon job" />
+                            <Image loading="lazy" className="group-hover:grayscale-0 h-12 object-contain grayscale" src={job} alt="laravel cameroon job" />
                         </Link>
                         <Link href="/made-in-cmr/ln-ui" className="group col-span-1 flex justify-center md:col-span-3 lg:col-span-1">
-                            <Image className="group-hover:grayscale-0 h-12 object-contain grayscale" src={tranzak} alt="tranzak" />
+                            <Image loading="lazy" className="group-hover:grayscale-0 h-12 object-contain grayscale" src={tranzak} alt="tranzak" />
                         </Link>
                         <Link href="/made-in-cmr/loov-solution" className="group col-span-2 flex justify-center md:col-span-3 lg:col-span-1">
-                            <Image className="group-hover:grayscale-0 h-12 object-contain grayscale" src={loov} alt="loov solution" />
+                            <Image loading="lazy" className="group-hover:grayscale-0 h-12 object-contain grayscale" src={loov} alt="loov solution" />
                         </Link>
                         </div>
 

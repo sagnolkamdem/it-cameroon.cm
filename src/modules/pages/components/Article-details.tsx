@@ -36,7 +36,7 @@ const ArticleDetails = () => {
                             <footer className="mt-8 flex gap-4 items-center justify-center">
                                 <div>
                                     <span className="sr-only">Sagnol Kamdem</span>
-                                    <img className="w-10 h-10 rounded-full" src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHBlcnNvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60" alt="author photo" />
+                                    <Image sizes="100vw" width="0" height="0" className="w-10 h-10 rounded-full" src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHBlcnNvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60" alt="author photo" />
                                 </div>
                                 <div className="flex flex-col justify-between">
                                     <p className="font-semibold text-slate-500 dark:text-slate-300">Sagnol Kamdem</p>
@@ -47,7 +47,9 @@ const ArticleDetails = () => {
                     </div>
                 </div>
 
-                <img className="md:absolute md:z-10 md:right-0 md:inset-y-0 md:max-h-full max-h-60 max-w-full md:max-w-[50%] rounded-md mx-auto" src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8d2ViJTIwZGV2ZWxvcG1lbnR8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60" alt="article detail image"/>
+                <div className="md:absolute md:z-10 md:right-0 md:inset-y-0 md:max-h-full max-h-60 max-w-full md:max-w-[50%]  mx-auto">
+                    <Image sizes="100vw" height={0} width={0} className="object-fill w-full rounded-md" src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8d2ViJTIwZGV2ZWxvcG1lbnR8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60" alt="article detail image"/>
+                </div>
                 
                 <div className="absolute z-30 bottom-20 lg:bottom-10 w-full hidden md:block">
                     <svg className="mx-auto" width="281" height="261" viewBox="0 0 281 261" fill="none" xmlns="http://www.w3.org/2000/svg">
