@@ -1,63 +1,57 @@
 import Comment from "@/components/comment/Comment";
+import { CommentProps } from "../comment/comment.interface";
 
 const Feedback = () => {
 
-    const comments = [
+    const comments: CommentProps[] = [
         {
           id: 1,
-          message: "Mira’s teaching style is second to none. Everything was easy to follow every step of the way.",
+          message: "TECH CAMER helped us reach a bigger audience.",
           name: "Antonio Littel",
           work: "Frontend Developer",
+          agency: "Google",
+          photo: "https://images.unsplash.com/photo-1570158268183-d296b2892211?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHBob3RvJTIwZGUlMjBwZXJzb25uZSUyMG5vaXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=2000&q=60"
         },
         {
           id: 2,
-          message: "Mira’s teaching style is second to none. Mira’s teaching style is second to none. Everything was easy to follow every step of the way.",
+          message: "TECH CAMER helped us reach a bigger audience.",
           name: "Antonio Littel",
           work: "Frontend Developer",
+          agency: "Google",
+          photo: "https://images.unsplash.com/photo-1617942798556-4c6a49582667?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTA4fHxwaG90byUyMGRlJTIwcGVyc29ubmUlMjBub2lyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=2000&q=60"
         },
         {
           id: 3,
-          message: "Mira’s teaching style is second to none. Mira’s teaching style is second to none. Mira’s teaching style is second to none. Everything was easy to follow every step of the way.",
+          message: "TECH CAMER helped us reach a bigger audience.",
           name: "Antonio Littel",
           work: "Frontend Developer",
+          agency: "Google",
+          photo: "https://images.unsplash.com/photo-1611703321166-c7fdda00e5b6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTk5fHxwaG90byUyMGRlJTIwcGVyc29ubmUlMjBub2lyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=2000&q=60"
         },
         {
           id: 4,
-          message: "Mira’s teaching style is second to none. Everything was easy to follow every step of the way.",
+          message: "TECH CAMER helped us reach a bigger audience.",
           name: "Antonio Littel",
           work: "Frontend Developer",
+          agency: "Google",
+          photo: "https://images.unsplash.com/photo-1612582631307-9824f3a5dfd2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTQ4fHxwaG90byUyMGRlJTIwcGVyc29ubmUlMjBub2lyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=2000&q=60"
         },
         {
           id: 5,
-          message: "Mira’s teaching style is second to none. Mira’s teaching style is second to none. Everything was easy to follow every step of the way.",
+          message: "TECH CAMER helped us reach a bigger audience.",
           name: "Antonio Littel",
           work: "Frontend Developer",
+          agency: "Google",
+          photo: "https://images.unsplash.com/photo-1545291730-faff8ca1d4b0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTR8fHBob3RvJTIwZGUlMjBwZXJzb25uZSUyMG5vaXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=2000&q=60"
         },
         {
           id: 6,
-          message: "Mira’s teaching style is second to none. Mira’s teaching style is second to none. Mira’s teaching style is second to none. Everything was easy to follow every step of the way.",
+          message: "TECH CAMER helped us reach a bigger audience.",
           name: "Antonio Littel",
           work: "Frontend Developer",
+          agency: "Google",
+          photo: "https://images.unsplash.com/photo-1612601006505-1254db3e290d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fHBob3RvJTIwZGUlMjBwZXJzb25uZSUyMG5vaXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=2000&q=60"
         },
-    
-        {
-          id: 7,
-          message: "Mira’s teaching style is second to none. Mira’s teaching style is second to none. Everything was easy to follow every step of the way.",
-          name: "Antonio Littel",
-          work: "Frontend Developer",
-        },
-        {
-          id: 8,
-          message: "Mira’s teaching style is second to none. Mira’s teaching style is second to none. Mira’s teaching style is second to none. Everything was easy to follow every step of the way.",
-          name: "Antonio Littel",
-          work: "Frontend Developer",
-        },
-        {
-          id: 9,
-          message: "Mira’s teaching style is second to none. Mira’s teaching style is second to none. Mira’s teaching style is second to none. Everything was easy to follow every step of the way.",
-          name: "Antonio Littel",
-          work: "Frontend Developer",
-        }
       ];
 
     return ( 
@@ -65,20 +59,21 @@ const Feedback = () => {
 
             <div className="overflow-hidden mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:px-8">
 
-                <h2 className='font-display text-4xl font-bold tracking-tight text-slate-900 dark:text-white text-center mb-10'>Only positive feedback</h2>
+              <div className="mb-16">
+                <h2 className='font-display text-4xl font-bold tracking-tight text-slate-900 dark:text-white mb-5'>Don’t just take our word for it.</h2>
+                <p className='text-xl font-semibold text-slate-500 dark:text-slate-300'>Hear from some of our amazing users who are use our platform.</p>
+              </div>
 
-                <p className='text-center text-xl font-semibold text-slate-500 dark:text-slate-300 mb-10 px-6'>Our partners are full of praise for us in relation to the service provided</p>
+              <div className="pb-16 sm:pt-10 sm:pb-24 overflow-hidden">
 
-                <div className="pt-6 pb-16 sm:pt-10 sm:pb-24 overflow-hidden">
+                <ul className="[perspective:50rem] origin-center overflow-y-scroll flex gap-6 mb-2">
+                { comments.map((comment) => 
+                    <Comment key={comment.id} comment={comment}/>
+                    )
+                }
+                </ul>
 
-                    <ul className="mx-auto [perspective:50rem] origin-center overflow-hidden grid lg:grid-cols-3 sm:grid-cols-2 gap-6 mb-2">
-                    { comments.map((comment) => 
-                        <Comment key={comment.id} name={comment.name} message={comment.message} work={comment.work}/>
-                        )
-                    }
-                    </ul>
-
-                </div>
+              </div>
 
             </div>
 
