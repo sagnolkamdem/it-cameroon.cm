@@ -1,4 +1,7 @@
+import { ArrowLeftIcon, ArrowRightIcon } from "@heroicons/react/20/solid";
+
 import Comment from "@/components/comment/Comment";
+
 import { CommentProps } from "../comment/comment.interface";
 
 const Feedback = () => {
@@ -64,14 +67,25 @@ const Feedback = () => {
                 <p className='text-xl font-semibold text-slate-500 dark:text-slate-300'>Hear from some of our amazing users who are use our platform.</p>
               </div>
 
-              <div className="pb-16 sm:pt-10 sm:pb-24 overflow-hidden">
+              <div className="pb-16 sm:pt-10 sm:pb-24 overflow-hidden px-2">
 
-                <ul className="[perspective:50rem] origin-center overflow-y-scroll flex gap-6 mb-2">
+                <ul role="list" className="[perspective:50rem] origin-center overflow-y-scroll flex gap-6 mb-8">
                 { comments.map((comment) => 
                     <Comment key={comment.id} comment={comment}/>
                     )
                 }
                 </ul>
+
+                <div className="flex gap-8">
+                  <button className="w-14 h-14 rounded-full border border-gray-200 dark:border-gray-500 inline-flex justify-center items-center hover:scale-125">
+                    <span className="sr-only">Arrow left</span>
+                    <ArrowLeftIcon className="w-6 h-6 text-gray-500" aria-hidden="true" />
+                  </button>
+                  <button className="w-14 h-14 rounded-full border border-gray-200 dark:border-gray-500 inline-flex justify-center items-center hover:scale-125">
+                    <span className="sr-only">Arrow right</span>
+                    <ArrowRightIcon className="w-6 h-6 text-gray-500" aria-hidden="true" />
+                  </button>
+                </div>
 
               </div>
 
