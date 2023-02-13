@@ -11,38 +11,19 @@ import Search from "../../input/Search";
 
 
 import bigLogo from "../../../public/logo/complete.png";
+import useTheme from "../hooks/useTheme";
 
 const Header = () => {
 
     let { pathname } = useRouter();
 
-    const [theme, setTheme] = useState('dark');
+    const [theme, setTheme] = useState('');
     const [isShowing, setIsShowing] = useState(false);
     const [showMobileMenu, setShowMobileMenu] = useState(false);
 
     const [showFlyoutMenu, setShowFlyoutMenu] = useState(false);
 
-
-
-    useEffect(() => {
-        if (window.matchMedia('(prefers-color-scheme: dark)').matches || localStorage.getItem('theme') === 'dark') {
-            document.documentElement.classList.add('dark');
-        } else {
-            document.documentElement.classList.remove('dark');
-        }
-    }, []);
-
-    useEffect(() => {
-        if (theme === 'dark') {
-          document.documentElement.classList.add('dark')
-        } else {
-          document.documentElement.classList.remove('dark')
-        }
-
-        localStorage.setItem('theme', theme);
-
-    }, [theme]);
-
+    useTheme(theme);
 
 
     const handleClick = () => {
@@ -57,7 +38,6 @@ const Header = () => {
 
     const handleSwitchShowMobileMenu = () => {
         setShowMobileMenu(!showMobileMenu);
-        console.log(showMobileMenu);
     }
 
 
@@ -124,33 +104,7 @@ const Header = () => {
                                                     }
                                                 )}>
                                                     Jobs
-                                                </Link>
-
-                                            {/* <Link 
-                                                href="/inspiration" 
-                                                className={clsx(
-                                                    "-mx-3 block rounded-lg py-2 px-10 text-base font-semibold leading-7",
-                                                    {
-                                                        "text-primary-600 hover:text-primary-400 dark:text-primary-600": pathname === "/inspirations",
-                                                        "text-slate-700 hover:text-slate-900 dark:text-white dark:hover:text-slate-100": pathname !== "/inspirations",
-                                                    }
-                                                )}>
-                                                    Inspirations
-                                                    <span className="ml-0.5 text-slate-400 text-xs">(Soon)</span>
                                             </Link>
-
-                                            <Link 
-                                                href="#" 
-                                                className={clsx(
-                                                    "-mx-3 block rounded-lg py-2 px-10 text-base font-semibold leading-7",
-                                                    {
-                                                        "text-primary-600 hover:text-primary-400 dark:text-primary-600": pathname === "/carreers",
-                                                        "text-slate-700 hover:text-slate-900 dark:text-white dark:hover:text-slate-100": pathname !== "/carreers",
-                                                    }
-                                                )}>
-                                                    Carreers
-                                                    <span className="ml-0.5 text-slate-400 text-xs">(Soon)</span>
-                                            </Link> */}
 
                                             <Link 
                                                 href="/events" 
@@ -174,6 +128,32 @@ const Header = () => {
                                                     }
                                                 )}>
                                                     Blog
+                                            </Link>
+
+                                            <Link 
+                                                href="/inspiration" 
+                                                className={clsx(
+                                                    "-mx-3 block rounded-lg py-2 px-10 text-base font-semibold leading-7",
+                                                    {
+                                                        "text-primary-600 hover:text-primary-400 dark:text-primary-600": pathname === "/inspirations",
+                                                        "text-slate-700 hover:text-slate-900 dark:text-white dark:hover:text-slate-100": pathname !== "/inspirations",
+                                                    }
+                                                )}>
+                                                    Inspirations
+                                                    <span className="ml-0.5 text-slate-400 text-xs">(Soon)</span>
+                                            </Link>
+
+                                            <Link 
+                                                href="#" 
+                                                className={clsx(
+                                                    "-mx-3 block rounded-lg py-2 px-10 text-base font-semibold leading-7",
+                                                    {
+                                                        "text-primary-600 hover:text-primary-400 dark:text-primary-600": pathname === "/carreers",
+                                                        "text-slate-700 hover:text-slate-900 dark:text-white dark:hover:text-slate-100": pathname !== "/carreers",
+                                                    }
+                                                )}>
+                                                    Carreers
+                                                    <span className="ml-0.5 text-slate-400 text-xs">(Soon)</span>
                                             </Link>
                                         </div>
                                         <div className="py-6 px-7">
