@@ -67,7 +67,7 @@ const Feedback = () => {
                 <p className='text-xl font-semibold text-slate-500 dark:text-slate-300'>Hear from some of our amazing users who are use our platform.</p>
               </div>
 
-              <div className="pb-16 sm:pt-10 sm:pb-24 overflow-hidden px-2">
+              <div className="sm:pt-10 overflow-hidden px-2">
 
                 <ul role="list" className="[perspective:50rem] origin-center overflow-y-scroll flex gap-6 mb-8">
                 { comments.map((comment) => 

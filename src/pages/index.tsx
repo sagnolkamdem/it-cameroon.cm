@@ -4,6 +4,7 @@ import Newsletter from '@/components/sections/Newsletter';
 import MadeInCmr from '@/components/sections/Made-in-cmr';
 import Feedback from '@/components/sections/Feedback';
 import PlaceToBe from '@/components/sections/PlaceToBe';
+import Startup from '@/components/sections/Startup';
 
 export default function Home() {
 
@@ -18,6 +19,8 @@ export default function Home() {
       <PlaceToBe />
 
       <Feedback />
+
+      <Startup />
       
       <Newsletter />
     
