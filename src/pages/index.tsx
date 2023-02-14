@@ -3,6 +3,7 @@ import Hero from '@/components/sections/Hero';
 import Newsletter from '@/components/sections/Newsletter';
 import MadeInCmr from '@/components/sections/Made-in-cmr';
 import Feedback from '@/components/sections/Feedback';
+import PlaceToBe from '@/components/sections/PlaceToBe';
 
 export default function Home() {
 
@@ -13,6 +14,8 @@ export default function Home() {
       <Hero />
 
       <MadeInCmr />
+
+      <PlaceToBe />
 
       <Feedback />
       
