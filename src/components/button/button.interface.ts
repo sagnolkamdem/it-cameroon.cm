@@ -3,6 +3,6 @@ export interface ButtonProps {
     intent?: "primary" | "secondary" | "warning" | "danger" | undefined;
     href?: string;
     children: React.ReactNode;
-    className?: string;
+    class?: string;
     click?: any;
 }

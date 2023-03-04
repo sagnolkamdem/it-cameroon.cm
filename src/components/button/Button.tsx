@@ -7,7 +7,7 @@ const Button = (props: ButtonProps) => {
 
     const className = clsx(
         "inline-flex items-center rounded-md border border-transparent transition duration-100 px-4 py-2 text-sm font-medium shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2", 
-        props.className,
+        props.class,
         {
             "bg-primary-600 hover:bg-primary-700 text-white focus:ring-primary-500": props.intent === "primary",
             "bg-secondary-600 hover:bg-secondary-700 text-white focus:ring-secondary-500": props.intent === "secondary",

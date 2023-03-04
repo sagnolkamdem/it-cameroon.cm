@@ -1,11 +1,9 @@
 import Image from "next/image";
 import { BriefcaseIcon, CalendarDaysIcon, GlobeEuropeAfricaIcon, MapIcon, NewspaperIcon, UserGroupIcon } from "@heroicons/react/20/solid";
 
-import small from "../../public/logo/small.png";
-
 const PlaceToBe = () => {
     return ( 
-        <div className="flex flex-col gap-8 sm:grid lg:grid-cols-3 sm:grid-cols-2 items-center mt-14 overflow-hidden mx-auto max-w-7xl pt-12 px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col gap-8 sm:grid lg:grid-cols-3 sm:grid-cols-2 items-center overflow-hidden mx-auto max-w-7xl py-20 px-4 sm:px-6 lg:px-8">
 
             <div className="lg:col-span-2 max-w-2xl">
                 

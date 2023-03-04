@@ -9,12 +9,12 @@ import dikalo from "../../public/companies/dikalo_logo_orange.png";
 
 const Startup = () => {
     return ( 
-        <div className="px-16 py-24 mb-14">
+        <div className="mb-14 mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-2">
 
                 <div className="flex flex-col justify-between max-w-lg">
                     <h2 className='font-display text-4xl font-bold tracking-tight text-slate-900 dark:text-white mb-5'>Join over 100 startups and 200 users growing with TECH CAMER.</h2>
-                    <Button href="/register" intent="primary" className="max-w-fit">
+                    <Button href="/register" intent="primary" class="max-w-fit">
                         Join us to participate in this adventure
                         <ArrowRightIcon className="w-6 h-6 ml-2" aria-hidden="true" />
                     </Button>

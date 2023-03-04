@@ -13,12 +13,12 @@ const MadeInCmr = () => {
     return ( 
         <div className="mt-14">
 
-            <div className="mb-16 sm:px-6 lg:px-8">
+            <div className="mb-16 mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:px-8">
                 <h2 className='font-display text-4xl font-bold tracking-tight text-slate-900 dark:text-white mb-5'>Solutions made in cmr</h2>
                 <p className='text-xl font-semibold text-slate-500 dark:text-slate-300'>companies promote their solution through our channel and trust us to reach as many people as possible.</p>
               </div>
             
-            <div className="bg-gray-100 dark:bg-gray-800 z-50">
+            <div className="bg-gray-300 dark:bg-gray-800 z-50">
                 <div className="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:px-8">
                     <div className="grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
                         <Link href="/made-in-cmr/cosna-afrique" className="group col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
@@ -39,10 +39,10 @@ const MadeInCmr = () => {
                         </div>
 
                         <div className="mt-10 h-10 flex justify-center">
-                        <Button href='#'>
+                        <Link href='#' className="inline-flex items-center rounded-md border border-transparent bg-secondary-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-secondary-700 focus:outline-none focus:ring-2 focus:ring-secondary-500 focus:ring-offset-2">
                             See more
                             <span className="ml-2" aria-hidden="true">&rarr;</span>
-                        </Button>
+                        </Link>
                     </div>
 
                 </div>
